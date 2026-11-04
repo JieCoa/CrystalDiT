@@ -125,6 +125,23 @@ def read_vasp_stress(folder_path):
     
     return None
 
+def is_vasp_completed(folder_path):
+    """ 完成性检查: 失败目录中如果有 CONTCAR 非空且能读到能量，也可能生成少量 .traj，
+    但这类不建议信任，因为 VASP 没有正常结束 """
+    outcar_path = os.path.join(folder_path, "OUTCAR")
+    if not os.path.exists(outcar_path):
+        return False
+
+    try:
+        with open(outcar_path, "r", errors="ignore") as f:
+            for line in f:
+                if "Voluntary context switches" in line:
+                    return True
+    except Exception:
+        return False
+
+    return False
+
 def create_traj_file(folder_path, output_file):
     """
     Create trajectory file from VASP output
@@ -141,6 +158,11 @@ def create_traj_file(folder_path, output_file):
         poscar_path = os.path.join(folder_path, 'POSCAR')
         if not os.path.exists(poscar_path):
             print(f"Error: POSCAR file not found in {folder_path}")
+            return False
+
+        # 完成性检查
+        if not is_vasp_completed(folder_path):
+            print(f"Skip: VASP did not complete normally in {folder_path}")
             return False
         
         initial_atoms = read(poscar_path)

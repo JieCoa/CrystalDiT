@@ -1,0 +1,28 @@
+# Generated outputs and model checkpoints
+/checkpoints/
+/Generate_crystals/
+/generate_crystals/
+/datasets/
+/output/
+
+chgnet_results_CrystalDiT/
+chgnet_results_CrystalDiT_seed123/
+chgnet_results_ADiT/
+chgnet_results_diffcsp-pp/
+chgnet_results_flowmm/
+chgnet_results_mattergen/
+
+# mpts-52
+chgnet_results_CrystalDiT_mpts52/
+chgnet_results_CrystalDiT_mpts52_seed123/
+chgnet_results_CrystalDiT_mpts52_seed222/
+chgnet_results_CrystalDiT_mpts52_ep38000/
+chgnet_results_CrystalDiT_mpts52_ep38000_seed123/
+
+chgnet_results_CrystalDiT_seed222/
+
+crystaldit_mpts52_crystals_ma52/
+crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/
+
+generate_crystals_flowmm_aligned_analysis/
+Generate_crystals_flowmm_aligned_analysis/

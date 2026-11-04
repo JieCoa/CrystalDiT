@@ -25,10 +25,12 @@ def calculate_balance_score(un_rate, structural_validity, chemical_validity,
     """
     
     # 1. Structural validity score (95-100% range)
-    struct_score = max(0, min(1, (structural_validity - 0.95) / 0.05))
+    # struct_score = max(0, min(1, (structural_validity - 0.95) / 0.05))
+    struct_score = max(0, min(1, (structural_validity - 0.90) / 0.1))  # mpts_52
     
     # 2. Chemical validity score (80-100% range) 
-    chem_score = max(0, min(1, (chemical_validity - 0.8) / 0.2))
+    # chem_score = max(0, min(1, (chemical_validity - 0.8) / 0.2))
+    chem_score = max(0, min(1, (chemical_validity - 0.75) / 0.25))  # mpts_52
     
     # 3. Density distribution score (1.0-0.1 range, lower is better)
     density_score = max(0, min(1, (1.0 - density_diff) / 0.9))
@@ -158,8 +160,8 @@ def process_results_folder(folder_path, alpha_values=None, max_epoch=50000):
             un_rate = data['un_metrics']['un_rate']
             structural_validity = data['validity_metrics']['structural_validity']
             chemical_validity = data['validity_metrics']['chemical_validity']
-            density_diff = data['distribution_metrics']['d_density_train']
-            elements_diff = data['distribution_metrics']['d_elements_train']
+            density_diff = data['distribution_metrics']['d_density_test']
+            elements_diff = data['distribution_metrics']['d_elements_test']
             
             # Store basic results
             basic_result = {

@@ -16,7 +16,7 @@ from tqdm import tqdm
 import json
 import random
 
-from crystal_representation import CrystalDataset, preprocess_dataset
+from crystal_representation import CrystalDataset, get_max_length, preprocess_dataset
 from crystal_dit import CrystalDiT
 from crystal_diffusion import CrystalGaussianDiffusion
 
@@ -77,29 +77,29 @@ def cleanup():
     """Clean up distributed training environment"""
     dist.destroy_process_group()
 
-def save_checkpoint(model, optimizer, scheduler, epoch, global_step, args, rank, is_best=False, is_periodic=False):
-    """Save model checkpoint"""
+def save_checkpoint(
+    model, optimizer, scheduler, epoch, global_step, best_train_loss,
+    args, rank, is_best=False, is_periodic=False
+):
+    """Save a checkpoint containing all state required to resume training."""
     if rank != 0:
         return
     
     checkpoint = {
         'model': model.module.state_dict(),
+        'optimizer': optimizer.state_dict() if optimizer is not None else None,
+        'scheduler': scheduler.state_dict() if scheduler is not None else None,
+        'epoch': epoch,
+        'global_step': global_step,
+        'best_train_loss': best_train_loss,
+        'args': args,
+        'random_state': {
+            'python': random.getstate(),
+            'numpy': np.random.get_state(),
+            'torch': torch.get_rng_state(),
+            'cuda': torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None,
+        }
     }
-    
-    if not is_periodic:
-        checkpoint.update({
-            'optimizer': optimizer.state_dict(),
-            'scheduler': scheduler.state_dict() if scheduler else None,
-            'epoch': epoch,
-            'global_step': global_step,
-            'args': args,
-            'random_state': {
-                'python': random.getstate(),
-                'numpy': np.random.get_state(),
-                'torch': torch.get_rng_state(),
-                'cuda': torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None,
-            }
-        })
     
     if not is_periodic:
         latest_path = os.path.join(args.output_dir, 'latest_checkpoint.pt')
@@ -109,7 +109,7 @@ def save_checkpoint(model, optimizer, scheduler, epoch, global_step, args, rank,
     if is_periodic:
         epoch_path = os.path.join(args.output_dir, f'checkpoint_epoch_{epoch}.pt')
         torch.save(checkpoint, epoch_path)
-        logging.info(f"Saved periodic checkpoint: {epoch_path} (weights only)")
+        logging.info(f"Saved periodic checkpoint: {epoch_path}")
     
     if is_best:
         best_path = os.path.join(args.output_dir, 'best_model.pt')
@@ -121,7 +121,7 @@ def load_checkpoint(model, optimizer, scheduler, args, rank):
     if not os.path.exists(args.resume):
         if rank == 0:
             logging.info(f"Checkpoint not found: {args.resume}, starting from scratch.")
-        return 0, 0
+        return 0, 0, float('inf')
     
     if rank == 0:
         logging.info(f"Loading checkpoint: {args.resume}")
@@ -164,6 +164,7 @@ def load_checkpoint(model, optimizer, scheduler, args, rank):
     
     epoch = checkpoint.get('epoch', 0)
     global_step = checkpoint.get('global_step', 0)
+    best_train_loss = checkpoint.get('best_train_loss', float('inf'))
     
     if rank == 0:
         if epoch > 0:
@@ -171,7 +172,7 @@ def load_checkpoint(model, optimizer, scheduler, args, rank):
         else:
             logging.info(f"Loaded model weights, but starting from epoch 0 (simplified checkpoint)")
     
-    return epoch, global_step
+    return epoch, global_step, best_train_loss
 
 def train_epoch(model, diffusion, dataloader, optimizer, scheduler, device, epoch, global_step, args, rank):
     """Train for one epoch"""
@@ -253,26 +254,36 @@ def train(rank, world_size, args):
     else:
         preprocessed_dir = args.preprocessed_dir
 
+    max_length = get_max_length(args.max_atoms)
+    preprocessed_filename = (
+        f"train_preprocessed_ma{args.max_atoms}_ml{max_length:.4f}.pkl"
+    )
+
     if rank == 0:
         os.makedirs(preprocessed_dir, exist_ok=True)
-        train_preprocessed = os.path.join(preprocessed_dir, f"train_preprocessed_ma{args.max_atoms}.pkl")
-        
-        if args.force_preprocess or not os.path.exists(train_preprocessed):
+        train_preprocessed = os.path.join(preprocessed_dir, preprocessed_filename)
+
+        if args.force_preprocess and os.path.exists(train_preprocessed):
+            os.remove(train_preprocessed)
+
+        if not os.path.exists(train_preprocessed):
             preprocess_dataset(
-                os.path.join(args.data_dir, "train.csv"), 
-                train_preprocessed, 
-                args.max_atoms
+                os.path.join(args.data_dir, "train.csv"),
+                train_preprocessed,
+                args.max_atoms,
+                max_length
             )
     
     dist.barrier()
     
-    train_preprocessed = os.path.join(preprocessed_dir, f"train_preprocessed_ma{args.max_atoms}.pkl")
+    train_preprocessed = os.path.join(preprocessed_dir, preprocessed_filename)
     logging.info(f"Process {rank}: Loading dataset...")
     
     try:
         train_dataset = CrystalDataset(
-            os.path.join(args.data_dir, "train.csv"), 
+            os.path.join(args.data_dir, "train.csv"),
             max_atoms=args.max_atoms,
+            max_length=max_length,
             preprocessed_file=train_preprocessed,
             force_preprocess=False
         )
@@ -339,10 +350,11 @@ def train(rank, world_size, args):
     )
     
     start_epoch, global_step = 0, 0
-    if args.resume:
-        start_epoch, global_step = load_checkpoint(model, optimizer, scheduler, args, rank)
-    
     best_train_loss = float('inf')
+    if args.resume: # resume training from checkpoint
+        start_epoch, global_step, best_train_loss = load_checkpoint(
+            model, optimizer, scheduler, args, rank
+        )
     
     for epoch in range(start_epoch, args.epochs):
         train_sampler.set_epoch(epoch)
@@ -358,16 +370,20 @@ def train(rank, world_size, args):
             if rank == 0:
                 logging.info(f"Found new best model, training loss: {train_loss:.6f}")
         
-        if (epoch + 1) % args.save_every == 0:
+        is_periodic = (epoch + 1) % args.save_every == 0
+        should_save_latest = args.save_every_epoch or is_best
+        
+        if is_periodic:
             save_checkpoint(
                 model, optimizer, scheduler, epoch + 1, global_step,
-                args, rank, is_best=False, is_periodic=True
+                best_train_loss, args, rank, is_best=False, is_periodic=True
             )
         
-        save_checkpoint(
-            model, optimizer, scheduler, epoch + 1, global_step,
-            args, rank, is_best=is_best, is_periodic=False
-        )
+        if should_save_latest:
+            save_checkpoint(
+                model, optimizer, scheduler, epoch + 1, global_step,
+                best_train_loss, args, rank, is_best=is_best, is_periodic=False
+            )
     
     cleanup()
 
@@ -376,7 +392,7 @@ def main():
     
     # Data parameters
     parser.add_argument('--data_dir', type=str, default='./datasets/mp_20', help='Dataset directory')
-    parser.add_argument('--max_atoms', type=int, default=20, help='Maximum number of atoms')
+    parser.add_argument('--max_atoms', type=int, choices=(20, 52), default=20, help='Maximum number of atoms')
     parser.add_argument('--preprocessed_dir', type=str, default=None, help='Preprocessed data directory')
     parser.add_argument('--force_preprocess', action='store_true', help='Force reprocessing even if preprocessed files exist')
     
@@ -396,12 +412,18 @@ def main():
     parser.add_argument('--weight_decay', type=float, default=0.01, help='Weight decay')
     parser.add_argument('--clip_grad', type=float, default=1.0, help='Gradient clipping threshold')
     parser.add_argument('--epochs', type=int, default=50000, help='Number of training epochs')
+    # 不建议设置 num_workers，因为本身 batch_size 很大且数据集很小，会导致每个线程得到的 batch 有限
     parser.add_argument('--num_workers', type=int, default=0, help='Number of data loading workers per GPU')
     
     # Checkpoint parameters
     parser.add_argument('--output_dir', type=str, default='./output/crystal_dit', help='Output directory')
     parser.add_argument('--resume', type=str, default='', help='Resume training from checkpoint')
     parser.add_argument('--save_every', type=int, default=250, help='Save checkpoint every N epochs')
+    parser.add_argument(
+        '--save_every_epoch',
+        action='store_true',
+        help='Save the latest checkpoint after every epoch'
+    )
     
     # Logging parameters
     parser.add_argument('--log_every', type=int, default=10, help='Log every N steps')
@@ -410,6 +432,8 @@ def main():
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     
     args = parser.parse_args()
+    if args.save_every <= 0:
+        parser.error('--save_every must be greater than 0')
     
     world_size = torch.cuda.device_count()
     assert world_size >= 1, "At least one GPU is required for training"

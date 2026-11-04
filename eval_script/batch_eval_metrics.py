@@ -434,7 +434,7 @@ class CPUManager:
             'data_loading': max(1, int(available * 0.30)),
             'validity_computing': max(1, int(available * 0.20)),
             'distribution_computing': max(1, int(available * 0.25)),
-            'un_computing': max(1, int(available * 0.25)),
+            'un_computing': max(1, int(available * 0.75)),  # 0.25
         }
         
         print(f"CPU core allocation strategy:")

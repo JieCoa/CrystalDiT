@@ -1,21 +1,23 @@
 #!/bin/bash
 
 # Batch crystal structure generation script
-# Usage: ./batch_generate.sh <folder_path> [num_samples] [batch_size]
+# Usage: ./batch_generatefor.sh <folder_path> [num_samples] [batch_size] [max_atoms]
 
 # Check parameters
-if [ $# -lt 1 ] || [ $# -gt 3 ]; then
-    echo "Usage: $0 <folder_path> [num_samples] [batch_size]"
+if [ $# -lt 1 ] || [ $# -gt 4 ]; then
+    echo "Usage: $0 <folder_path> [num_samples] [batch_size] [max_atoms]"
     echo ""
     echo "Parameters:"
     echo "  folder_path  - Path to folder containing .pt model files"
     echo "  num_samples  - Number of samples to generate per model (default: 1000)"
     echo "  batch_size   - Batch size for generation (default: 32)"
+    echo "  max_atoms    - Maximum number of atoms, either 20 or 52 (default: 20)"
     echo ""
     echo "Examples:"
-    echo "  $0 /path/to/models                    # Use default parameters"
-    echo "  $0 /path/to/models 500               # Generate 500 samples"
-    echo "  $0 /path/to/models 1000 64           # Generate 1000 samples with batch size 64"
+    echo "  $0 /path/to/models                          # Use default parameters"
+    echo "  $0 /path/to/models 500                     # Generate 500 samples"
+    echo "  $0 /path/to/models 1000 64                 # Use batch size 64"
+    echo "  $0 /path/to/models 1000 64 52              # Generate crystals with max_atoms=52"
     exit 1
 fi
 
@@ -23,6 +25,12 @@ fi
 MODEL_DIR="$1"
 NUM_SAMPLES="${2:-1000}"
 BATCH_SIZE="${3:-32}"
+MAX_ATOMS="${4:-20}"
+
+if [ "$MAX_ATOMS" != "20" ] && [ "$MAX_ATOMS" != "52" ]; then
+    echo "Error: max_atoms must be either 20 or 52"
+    exit 1
+fi
 
 # Check if folder exists
 if [ ! -d "$MODEL_DIR" ]; then
@@ -36,9 +44,9 @@ if [ ! -f "generate_crystals.py" ]; then
     exit 1
 fi
 
-# Create output directory
+# Create a separate output directory for each max_atoms configuration
 FOLDER_NAME=$(basename "$MODEL_DIR")
-OUTPUT_BASE_DIR="${FOLDER_NAME}_crystals"
+OUTPUT_BASE_DIR="${FOLDER_NAME}_crystals_ma${MAX_ATOMS}"
 
 if [ -d "$OUTPUT_BASE_DIR" ]; then
     echo "Output directory exists, will check and skip completed files: $OUTPUT_BASE_DIR"
@@ -50,6 +58,7 @@ fi
 echo "Processing folder: $MODEL_DIR"
 echo "Number of samples: $NUM_SAMPLES"
 echo "Batch size: $BATCH_SIZE"
+echo "Maximum atoms: $MAX_ATOMS"
 echo "Finding all .pt files..."
 
 # Find all .pt files
@@ -120,7 +129,7 @@ for pt_file in "${PT_FILES[@]}"; do
     fi
     
     echo "Generating $NUM_SAMPLES crystal structures..."
-    echo "Command: python generate_crystals.py --checkpoint \"$pt_file\" --output_dir \"$output_dir\" --num_samples $NUM_SAMPLES --batch_size $BATCH_SIZE"
+    echo "Command: python generate_crystals.py --checkpoint \"$pt_file\" --output_dir \"$output_dir\" --num_samples $NUM_SAMPLES --batch_size $BATCH_SIZE --max_atoms $MAX_ATOMS"
     
     # Record start time
     start_time=$(date +%s)
@@ -129,8 +138,9 @@ for pt_file in "${PT_FILES[@]}"; do
     if python generate_crystals.py \
         --checkpoint "$pt_file" \
         --output_dir "$output_dir" \
-        --num_samples $NUM_SAMPLES \
-        --batch_size $BATCH_SIZE \
+        --num_samples "$NUM_SAMPLES" \
+        --batch_size "$BATCH_SIZE" \
+        --max_atoms "$MAX_ATOMS" \
         --use_multi_gpu; then
         
         # Calculate duration

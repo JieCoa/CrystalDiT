@@ -319,7 +319,8 @@ class CHGNetProcessor:
     def __init__(self, cif_folder: str, csv_file: str, mp_hull_path: str, 
                  sample_size: int, output_dir: str, un_only: bool = False,
                  max_steps: int = 1500, stability_threshold: float = 0.0,
-                 metastability_threshold: float = 0.1, dft_threshold: float = 0.1):
+                 metastability_threshold: float = 0.1, dft_threshold: float = 0.1,
+                 random_seed: int = 42):
         
         self.cif_folder = Path(cif_folder)
         self.csv_file = Path(csv_file)
@@ -331,6 +332,7 @@ class CHGNetProcessor:
         self.stability_threshold = stability_threshold
         self.metastability_threshold = metastability_threshold
         self.dft_threshold = dft_threshold
+        self.random_seed = random_seed
         
         # Create output directories
         self.output_dir.mkdir(exist_ok=True)
@@ -413,7 +415,7 @@ class CHGNetProcessor:
         
         # Sampling
         un_sample_size = min(self.sample_size, len(un_df))
-        un_sampled = un_df.sample(n=un_sample_size, random_state=42) if un_sample_size > 0 else pd.DataFrame()
+        un_sampled = un_df.sample(n=un_sample_size, random_state=self.random_seed) if un_sample_size > 0 else pd.DataFrame()
         
         if self.un_only:
             non_un_sampled = pd.DataFrame()
@@ -421,7 +423,7 @@ class CHGNetProcessor:
             print(f"   Sampling result (UN only mode): {len(un_sampled)} UN")
         else:
             non_un_sample_size = min(self.sample_size, len(non_un_df))
-            non_un_sampled = non_un_df.sample(n=non_un_sample_size, random_state=42) if non_un_sample_size > 0 else pd.DataFrame()
+            non_un_sampled = non_un_df.sample(n=non_un_sample_size, random_state=self.random_seed) if non_un_sample_size > 0 else pd.DataFrame()
             print(f"   Sampling result: {len(un_sampled)} UN + {len(non_un_sampled)} non-UN = {len(un_sampled) + len(non_un_sampled)} total")
         
         # Build file path lists
@@ -894,7 +896,8 @@ def main():
             max_steps=args.max_steps,
             stability_threshold=args.stability_threshold,
             metastability_threshold=args.metastability_threshold,
-            dft_threshold=args.dft_threshold
+            dft_threshold=args.dft_threshold,
+            random_seed=args.random_seed
         )
         
         processor.run_complete_evaluation()

@@ -183,7 +183,7 @@ class CrystalGaussianDiffusion:
         return posterior_mean
     
     def _extract_into_tensor(self, arr, timesteps, broadcast_shape):
-        """从1-D numpy数组中提取值"""
+        """将数组 arr 按 timesteps 索引，广播到 broadcast_shape 形状"""
         res = torch.from_numpy(arr).to(device=timesteps.device)[timesteps].float()
         while len(res.shape) < len(broadcast_shape):
             res = res[..., None]

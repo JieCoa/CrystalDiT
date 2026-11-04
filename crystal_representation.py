@@ -155,6 +155,23 @@ ATOMIC_NUMBER_TO_POSITION = {
 # Reverse mapping - (period, group) to atomic number
 POSITION_TO_ATOMIC_NUMBER = {position: number for number, position in ATOMIC_NUMBER_TO_POSITION.items()}
 
+MAX_LENGTH_BY_MAX_ATOMS = {
+    20: 46.7425,
+    52: 130.4535,
+}
+
+
+def get_max_length(max_atoms):
+    """Return the lattice normalization length for a supported atom limit."""
+    try:
+        return MAX_LENGTH_BY_MAX_ATOMS[max_atoms]
+    except KeyError as exc:
+        supported = ", ".join(str(value) for value in sorted(MAX_LENGTH_BY_MAX_ATOMS))
+        raise ValueError(
+            f"Unsupported max_atoms={max_atoms}; supported values are: {supported}"
+        ) from exc
+
+
 def normalize_row(row):
     """Normalize period number to [-1, 1] range"""
     return (row / 7.0) * 2 - 1
@@ -173,7 +190,7 @@ def denormalize_column(norm_column):
     column = ((norm_column + 1) / 2) * 18
     return round(column)
 
-def preprocess_dataset(csv_file, output_file, max_atoms=20, max_length=46.7425):
+def preprocess_dataset(csv_file, output_file, max_atoms=20, max_length=None):
     """
     Preprocess dataset by parsing CIF strings into lattice vectors and atom features
     
@@ -181,11 +198,14 @@ def preprocess_dataset(csv_file, output_file, max_atoms=20, max_length=46.7425):
         csv_file: Path to dataset CSV file
         output_file: Path to preprocessed data output file
         max_atoms: Maximum number of atoms per crystal
-        max_length: Maximum lattice vector length for normalization
+        max_length: Maximum lattice vector length for normalization; inferred from max_atoms when omitted
     
     Returns:
         Number of successfully preprocessed samples
     """
+    if max_length is None:
+        max_length = get_max_length(max_atoms)
+
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     if os.path.exists(output_file) and not output_file.endswith('.tmp'):
@@ -290,16 +310,19 @@ class CrystalDataset(Dataset):
     Supports periodic table position representation for atoms
     Can load preprocessed data or parse from CIF strings
     """
-    def __init__(self, csv_file, max_atoms=20, max_length=46.7425, transform=None, preprocessed_file=None, force_preprocess=False):
+    def __init__(self, csv_file, max_atoms=20, max_length=None, transform=None, preprocessed_file=None, force_preprocess=False):
         """
         Args:
             csv_file: Path to dataset CSV file
             max_atoms: Maximum number of atoms per crystal
-            max_length: Maximum lattice vector length for normalization
+            max_length: Maximum lattice vector length for normalization; inferred from max_atoms when omitted
             transform: Optional data transform
             preprocessed_file: Path to preprocessed file, auto-generated if None
             force_preprocess: Force repreprocessing even if preprocessed file exists
         """
+        if max_length is None:
+            max_length = get_max_length(max_atoms)
+
         self.csv_file = csv_file
         self.max_atoms = max_atoms
         self.max_length = max_length

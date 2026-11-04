@@ -14,7 +14,7 @@ from scipy.stats import norm
 
 from crystal_dit import CrystalDiT
 from crystal_diffusion import CrystalGaussianDiffusion
-from crystal_representation import ATOMIC_NUMBER_TO_POSITION, POSITION_TO_ATOMIC_NUMBER, normalize_row, normalize_column, denormalize_row, denormalize_column
+from crystal_representation import ATOMIC_NUMBER_TO_POSITION, POSITION_TO_ATOMIC_NUMBER, get_max_length, normalize_row, normalize_column, denormalize_row, denormalize_column
 
 # Rare gas elements list
 RARE_GAS_ELEMENTS = [2, 10, 18, 36, 54, 86]
@@ -83,7 +83,7 @@ def load_model(checkpoint_path, max_atoms, device, hidden_size=512, depth=18, nu
     
     return model, checkpoint.get('args', None)
     
-def convert_to_structure(lattice_vectors, atom_features, max_length=46.7425, filter_rare_gases=True):
+def convert_to_structure(lattice_vectors, atom_features, max_length, filter_rare_gases=True):
     """Convert model output to crystal structures"""
     batch_size = lattice_vectors.shape[0]
     structures = []
@@ -341,8 +341,7 @@ def generate_crystals_single_device(args):
 def main():
     parser = argparse.ArgumentParser(description="Generate crystal structures")
     parser.add_argument("--checkpoint", type=str, required=True, help="Model checkpoint path")
-    parser.add_argument("--max_atoms", type=int, default=20, help="Maximum number of atoms")
-    parser.add_argument("--max_length", type=float, default=46.7425, help="Maximum lattice vector length")
+    parser.add_argument("--max_atoms", type=int, choices=(20, 52), default=20, help="Maximum number of atoms")
     
     # Model parameters
     parser.add_argument("--hidden_size", type=int, default=512, help="Hidden dimension size")
@@ -361,6 +360,7 @@ def main():
     parser.add_argument("--filter_rare_gases", action="store_true", default=True, help="Filter rare gas elements")
     
     args = parser.parse_args()
+    args.max_length = get_max_length(args.max_atoms)
     
     if torch.cuda.is_available() and torch.cuda.device_count() > 1:
         args.use_multi_gpu = True
