@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_GdThO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.95329182
+_cell_length_b   3.95540463
+_cell_length_c   5.55603558
+_cell_angle_alpha   90.02611236
+_cell_angle_beta   89.99917529
+_cell_angle_gamma   90.00924650
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdThO4
+_chemical_formula_sum   'Gd1 Th1 O4'
+_cell_volume   86.87898908
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.00135421  0.99815733  0.00029549  1.0
+  Th  Th1  1  0.50105504  0.49962521  0.49936881  1.0
+  O  O2  1  0.00111863  0.50010952  0.25198849  1.0
+  O  O3  1  0.50007749  0.99942336  0.25150990  1.0
+  O  O4  1  0.50065510  0.99939777  0.74714368  1.0
+  O  O5  1  0.00081599  0.50146490  0.74898573  1.0

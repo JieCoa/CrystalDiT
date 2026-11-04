@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CaI2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.66431638
+_cell_length_b   7.29036529
+_cell_length_c   7.58980495
+_cell_angle_alpha   90.00381663
+_cell_angle_beta   89.94172945
+_cell_angle_gamma   90.05461922
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CaI2
+_chemical_formula_sum   'Ca2 I4'
+_cell_volume   258.08780422
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00048597  0.99938916  0.99874101  1.0
+  Ca  Ca1  1  0.50058274  0.49915224  0.49938905  1.0
+  I  I2  1  0.00106067  0.27415237  0.32448873  1.0
+  I  I3  1  0.00071729  0.72270892  0.67548754  1.0
+  I  I4  1  0.49966523  0.77715697  0.17524789  1.0
+  I  I5  1  0.50090499  0.22201688  0.82400796  1.0

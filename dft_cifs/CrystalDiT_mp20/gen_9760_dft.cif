@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Li3PrNd2Si3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.36596005
+_cell_length_b   7.27441250
+_cell_length_c   7.28791494
+_cell_angle_alpha   59.87552991
+_cell_angle_beta   89.99864430
+_cell_angle_gamma   89.99404326
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li3PrNd2Si3
+_chemical_formula_sum   'Li3 Pr1 Nd2 Si3'
+_cell_volume   200.20067050
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.49869089  0.76401557  0.99945976  1.0
+  Li  Li1  1  0.50011102  0.00359533  0.23348150  1.0
+  Li  Li2  1  0.50039346  0.23716116  0.76319418  1.0
+  Pr  Pr3  1  0.00005304  0.58618873  0.41563107  1.0
+  Nd  Nd4  1  0.00007651  0.00224595  0.58346249  1.0
+  Nd  Nd5  1  0.99979448  0.41693874  0.99922978  1.0
+  Si  Si6  1  0.49977824  0.66867526  0.66840990  1.0
+  Si  Si7  1  0.00022468  0.00194799  0.99761889  1.0
+  Si  Si8  1  0.49964099  0.33447543  0.33124817  1.0

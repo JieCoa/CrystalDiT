@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Th3Pa(VC2)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.49765620
+_cell_length_b   5.74264543
+_cell_length_c   10.68638223
+_cell_angle_alpha   89.87550184
+_cell_angle_beta   90.00370288
+_cell_angle_gamma   89.99796294
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Th3Pa(VC2)4
+_chemical_formula_sum   'Th3 Pa1 V4 C8'
+_cell_volume   214.64402240
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Th  Th0  1  0.25021561  0.08908128  0.85793760  1.0
+  Th  Th1  1  0.75061073  0.91573255  0.14222457  1.0
+  Th  Th2  1  0.75059098  0.41385447  0.36149121  1.0
+  Pa  Pa3  1  0.25032781  0.58312934  0.64200552  1.0
+  V  V4  1  0.75020438  0.58135919  0.89775526  1.0
+  V  V5  1  0.25054817  0.92090297  0.40135695  1.0
+  V  V6  1  0.25052880  0.42339765  0.10476649  1.0
+  V  V7  1  0.75041325  0.07914494  0.60297548  1.0
+  C  C8  1  0.75009513  0.83593037  0.74370370  1.0
+  C  C9  1  0.25055902  0.20630112  0.52940233  1.0
+  C  C10  1  0.75019185  0.35241960  0.74571002  1.0
+  C  C11  1  0.25066924  0.15635063  0.25466705  1.0
+  C  C12  1  0.25075323  0.65641472  0.24745508  1.0
+  C  C13  1  0.25032855  0.69864610  0.97328712  1.0
+  C  C14  1  0.75043628  0.30397229  0.02375406  1.0
+  C  C15  1  0.75048750  0.79286227  0.48264078  1.0

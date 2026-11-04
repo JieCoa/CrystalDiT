@@ -1,0 +1,13 @@
+{
+  "reports": [
+    {
+      "report": "/mnt/disk002/CaoJie_Workspace/CrystalDiT/chgnet_results_CrystalDiT_mpts52_ep38000_seed123/final_sun/final_evaluation_report.csv",
+      "extracted": 143
+    }
+  ],
+  "extracted": 143,
+  "skipped_empty": 357,
+  "failed": 0,
+  "mismatch": 0,
+  "duplicates": 0
+}

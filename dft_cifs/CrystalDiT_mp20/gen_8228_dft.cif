@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_NaThIn2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.37368560
+_cell_length_b   5.43121676
+_cell_length_c   5.36665524
+_cell_angle_alpha   119.19383838
+_cell_angle_beta   90.83919312
+_cell_angle_gamma   119.19851163
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaThIn2
+_chemical_formula_sum   'Na1 Th1 In2'
+_cell_volume   112.61147635
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.99834030  0.99760077  0.99632694  1.0
+  Th  Th1  1  0.50085504  0.00006772  0.49884115  1.0
+  In  In2  1  0.25032929  0.49947618  0.74697899  1.0
+  In  In3  1  0.75124202  0.50087348  0.24933898  1.0

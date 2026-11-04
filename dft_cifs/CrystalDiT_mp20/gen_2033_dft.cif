@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_SmCdPt2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.86585555
+_cell_length_b   4.84261240
+_cell_length_c   4.83906333
+_cell_angle_alpha   90.21027622
+_cell_angle_beta   119.58761514
+_cell_angle_gamma   119.69962986
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmCdPt2
+_chemical_formula_sum   'Sm1 Cd1 Pt2'
+_cell_volume   81.34424119
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.00035511  0.00097415  0.00119921  1.0
+  Cd  Cd1  1  0.00088365  0.50161902  0.50114252  1.0
+  Pt  Pt2  1  0.50210770  0.25263174  0.74988075  1.0
+  Pt  Pt3  1  0.50113277  0.75158204  0.25174192  1.0

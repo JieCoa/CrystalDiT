@@ -1,0 +1,29 @@
+# generated using pymatgen
+data_LiMgTe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.17893654
+_cell_length_b   4.33140048
+_cell_length_c   4.73138060
+_cell_angle_alpha   70.20147381
+_cell_angle_beta   50.19479806
+_cell_angle_gamma   68.43258411
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiMgTe
+_chemical_formula_sum   'Li1 Mg1 Te1'
+_cell_volume   75.02848434
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.72976122  0.72055096  0.78855340  1.0
+  Mg  Mg1  1  0.99227999  0.99696544  0.00869708  1.0
+  Te  Te2  1  0.26376503  0.28125472  0.22910615  1.0

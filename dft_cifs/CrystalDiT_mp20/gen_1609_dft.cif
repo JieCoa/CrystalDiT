@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_ScGaRh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.29944323
+_cell_length_b   6.31659864
+_cell_length_c   7.58140282
+_cell_angle_alpha   89.95219141
+_cell_angle_beta   90.01973365
+_cell_angle_gamma   90.03105474
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ScGaRh
+_chemical_formula_sum   'Sc4 Ga4 Rh4'
+_cell_volume   205.89454151
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.24886279  0.52675368  0.80890040  1.0
+  Sc  Sc1  1  0.74854820  0.47447311  0.19350411  1.0
+  Sc  Sc2  1  0.74854042  0.97358927  0.30950496  1.0
+  Sc  Sc3  1  0.24924570  0.02688778  0.69371025  1.0
+  Ga  Ga4  1  0.24817453  0.16282288  0.06858479  1.0
+  Ga  Ga5  1  0.74844845  0.83843168  0.93433733  1.0
+  Ga  Ga6  1  0.24926765  0.66267080  0.43402385  1.0
+  Ga  Ga7  1  0.74870685  0.33765405  0.56870383  1.0
+  Rh  Rh8  1  0.74941388  0.74392521  0.61067232  1.0
+  Rh  Rh9  1  0.24886210  0.25639394  0.39229748  1.0
+  Rh  Rh10  1  0.74844821  0.24527938  0.89236691  1.0
+  Rh  Rh11  1  0.24880994  0.75615009  0.11038169  1.0

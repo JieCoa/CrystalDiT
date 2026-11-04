@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_EuAl3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.42024416
+_cell_length_b   6.79599339
+_cell_length_c   6.79263640
+_cell_angle_alpha   119.97743301
+_cell_angle_beta   89.99111720
+_cell_angle_gamma   90.00812758
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuAl3
+_chemical_formula_sum   'Eu2 Al6'
+_cell_volume   176.75304886
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.25042870  0.33337638  0.66616587  1.0
+  Eu  Eu1  1  0.75047330  0.66540789  0.33259175  1.0
+  Al  Al2  1  0.25074665  0.86252036  0.13429140  1.0
+  Al  Al3  1  0.75050744  0.13603301  0.27163162  1.0
+  Al  Al4  1  0.25056489  0.86260063  0.72701368  1.0
+  Al  Al5  1  0.75091502  0.72653875  0.86235389  1.0
+  Al  Al6  1  0.25002487  0.27210558  0.13637717  1.0
+  Al  Al7  1  0.75023670  0.13606891  0.86432401  1.0

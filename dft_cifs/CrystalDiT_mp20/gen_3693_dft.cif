@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_EuMgCd2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.20345178
+_cell_length_b   5.21838524
+_cell_length_c   5.22712937
+_cell_angle_alpha   59.92696773
+_cell_angle_beta   60.25744658
+_cell_angle_gamma   60.13145515
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuMgCd2
+_chemical_formula_sum   'Eu1 Mg1 Cd2'
+_cell_volume   100.60125713
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.99954586  0.99832901  0.00291407  1.0
+  Mg  Mg1  1  0.50116443  0.50025001  0.49588506  1.0
+  Cd  Cd2  1  0.25044215  0.24771944  0.25366556  1.0
+  Cd  Cd3  1  0.75089988  0.74934350  0.74863388  1.0

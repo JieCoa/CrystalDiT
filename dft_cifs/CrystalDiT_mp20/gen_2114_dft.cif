@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_ZrMnGe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.82278702
+_cell_length_b   6.74374582
+_cell_length_c   6.73799331
+_cell_angle_alpha   60.09164466
+_cell_angle_beta   90.00202357
+_cell_angle_gamma   89.99302379
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ZrMnGe
+_chemical_formula_sum   'Zr3 Mn3 Ge3'
+_cell_volume   150.57151339
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.50109062  0.58504793  0.41300824  1.0
+  Zr  Zr1  1  0.50139336  0.41216181  0.99985818  1.0
+  Zr  Zr2  1  0.50143810  0.99798228  0.58566375  1.0
+  Mn  Mn3  1  0.00156717  0.75576330  0.00042147  1.0
+  Mn  Mn4  1  0.00169907  0.24061536  0.75754119  1.0
+  Mn  Mn5  1  0.00157535  0.99782995  0.24161188  1.0
+  Ge  Ge6  1  0.50160179  0.99848252  0.99966603  1.0
+  Ge  Ge7  1  0.00124874  0.33114213  0.33326929  1.0
+  Ge  Ge8  1  0.00138828  0.66462320  0.66717333  1.0

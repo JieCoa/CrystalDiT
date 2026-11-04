@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_VBiO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.14467796
+_cell_length_b   6.16340833
+_cell_length_c   6.50846379
+_cell_angle_alpha   58.15711007
+_cell_angle_beta   121.74439721
+_cell_angle_gamma   106.09529652
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   VBiO4
+_chemical_formula_sum   'V2 Bi2 O8'
+_cell_volume   178.06804750
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  V  V0  1  0.75011143  0.75084638  0.12427691  1.0
+  V  V1  1  0.24959420  0.25032701  0.87377570  1.0
+  Bi  Bi2  1  0.24893397  0.25231674  0.37351784  1.0
+  Bi  Bi3  1  0.74887150  0.74523081  0.62462364  1.0
+  O  O4  1  0.06835618  0.06760061  0.70500974  1.0
+  O  O5  1  0.93267326  0.93288715  0.29385970  1.0
+  O  O6  1  0.56830685  0.57004200  0.29697687  1.0
+  O  O7  1  0.06770322  0.43211284  0.86459213  1.0
+  O  O8  1  0.56695854  0.93177961  0.77357265  1.0
+  O  O9  1  0.43114262  0.43240453  0.70125487  1.0
+  O  O10  1  0.93120271  0.56719674  0.13519022  1.0
+  O  O11  1  0.43349017  0.07022054  0.22445222  1.0

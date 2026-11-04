@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DyHoNb2O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.15448255
+_cell_length_b   6.26476922
+_cell_length_c   8.13287564
+_cell_angle_alpha   110.36595608
+_cell_angle_beta   89.45475255
+_cell_angle_gamma   110.83479101
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyHoNb2O8
+_chemical_formula_sum   'Dy1 Ho1 Nb2 O8'
+_cell_volume   183.88144290
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.12730532  0.27309879  0.19607023  1.0
+  Ho  Ho1  1  0.86971657  0.72464692  0.80159576  1.0
+  Nb  Nb2  1  0.05614033  0.22754355  0.69041931  1.0
+  Nb  Nb3  1  0.94211734  0.77138900  0.30826896  1.0
+  O  O4  1  0.63663563  0.28010899  0.70459062  1.0
+  O  O5  1  0.07692003  0.15433926  0.42679723  1.0
+  O  O6  1  0.93612934  0.84945343  0.09591404  1.0
+  O  O7  1  0.29785533  0.58592404  0.76468220  1.0
+  O  O8  1  0.36185777  0.72021357  0.29395880  1.0
+  O  O9  1  0.70016918  0.41339033  0.23497858  1.0
+  O  O10  1  0.92071964  0.84359848  0.57200775  1.0
+  O  O11  1  0.05989184  0.14597551  0.90089636  1.0

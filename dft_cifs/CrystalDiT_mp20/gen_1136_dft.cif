@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_TbDyCdAg
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.23068433
+_cell_length_b   5.25269272
+_cell_length_c   5.22165917
+_cell_angle_alpha   59.77067815
+_cell_angle_beta   60.02075587
+_cell_angle_gamma   59.92189566
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbDyCdAg
+_chemical_formula_sum   'Tb1 Dy1 Cd1 Ag1'
+_cell_volume   101.22489455
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.74983057  0.74772112  0.75398932  1.0
+  Dy  Dy1  1  0.25060427  0.25103903  0.24892363  1.0
+  Cd  Cd2  1  0.99893965  0.00017006  0.00150123  1.0
+  Ag  Ag3  1  0.50138369  0.49942418  0.49927763  1.0

@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_SmEu(CuSi)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.13828415
+_cell_length_b   4.13943328
+_cell_length_c   8.16815310
+_cell_angle_alpha   89.99063171
+_cell_angle_beta   90.00340987
+_cell_angle_gamma   60.02606080
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmEu(CuSi)2
+_chemical_formula_sum   'Sm1 Eu1 Cu2 Si2'
+_cell_volume   121.20754991
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.99960176  0.00121118  0.49924488  1.0
+  Eu  Eu1  1  0.99985298  0.00122158  0.99948834  1.0
+  Cu  Cu2  1  0.33357850  0.33428326  0.74462129  1.0
+  Cu  Cu3  1  0.66588867  0.66792736  0.25436958  1.0
+  Si  Si4  1  0.66680636  0.66780248  0.73968045  1.0
+  Si  Si5  1  0.33236427  0.33441851  0.25875706  1.0

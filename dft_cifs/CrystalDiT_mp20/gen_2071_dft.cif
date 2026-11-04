@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Li2TiF4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.21539381
+_cell_length_b   4.22089102
+_cell_length_c   5.82446274
+_cell_angle_alpha   108.57318549
+_cell_angle_beta   108.91425794
+_cell_angle_gamma   96.64128626
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2TiF4
+_chemical_formula_sum   'Li2 Ti1 F4'
+_cell_volume   90.11993766
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.46957434  0.46568295  0.69981530  1.0
+  Li  Li1  1  0.76274406  0.77055217  0.30409643  1.0
+  Ti  Ti2  1  0.01117059  0.01422466  0.00393337  1.0
+  F  F3  1  0.89198953  0.48471996  0.00517837  1.0
+  F  F4  1  0.48230026  0.89451063  0.00121193  1.0
+  F  F5  1  0.74858692  0.74954925  0.60459749  1.0
+  F  F6  1  0.15083335  0.14116834  0.40351361  1.0

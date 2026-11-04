@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_PmNiC2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.79943249
+_cell_length_b   3.79345914
+_cell_length_c   3.77765104
+_cell_angle_alpha   90.02175726
+_cell_angle_beta   89.98014686
+_cell_angle_gamma   106.50404665
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PmNiC2
+_chemical_formula_sum   'Pm1 Ni1 C2'
+_cell_volume   52.20400383
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.99800778  0.00239586  0.00080558  1.0
+  Ni  Ni1  1  0.38482094  0.61625415  0.50109488  1.0
+  C  C2  1  0.84838614  0.45465203  0.50048024  1.0
+  C  C3  1  0.54592934  0.15283986  0.50149612  1.0

@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_PmPr(NdSi)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.25342849
+_cell_length_b   7.84866603
+_cell_length_c   7.84656347
+_cell_angle_alpha   90.40745062
+_cell_angle_beta   89.89715359
+_cell_angle_gamma   89.94898900
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PmPr(NdSi)4
+_chemical_formula_sum   'Pm1 Pr1 Nd4 Si4'
+_cell_volume   261.94048012
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.50078295  0.67702315  0.17895837  1.0
+  Pr  Pr1  1  0.00121637  0.99957028  0.00090113  1.0
+  Nd  Nd2  1  0.00031363  0.49861882  0.50110722  1.0
+  Nd  Nd3  1  0.50072428  0.82037239  0.67800484  1.0
+  Nd  Nd4  1  0.50095536  0.17628159  0.32215614  1.0
+  Nd  Nd5  1  0.50066100  0.32139800  0.82278905  1.0
+  Si  Si6  1  0.00053051  0.39210277  0.11165226  1.0
+  Si  Si7  1  0.00065471  0.10879450  0.60889994  1.0
+  Si  Si8  1  0.00065648  0.88689262  0.39067923  1.0
+  Si  Si9  1  0.00068210  0.60838355  0.89184116  1.0

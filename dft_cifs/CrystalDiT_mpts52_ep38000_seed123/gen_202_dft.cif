@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Na2CePrTi2O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.76245428
+_cell_length_b   3.76676935
+_cell_length_c   13.12799876
+_cell_angle_alpha   89.97799423
+_cell_angle_beta   90.01075893
+_cell_angle_gamma   89.96312151
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na2CePrTi2O8
+_chemical_formula_sum   'Na2 Ce1 Pr1 Ti2 O8'
+_cell_volume   186.05384797
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.50107741  0.99898563  0.41658127  1.0
+  Na  Na1  1  0.00006512  0.49836665  0.58450878  1.0
+  Ce  Ce2  1  0.99879165  0.49936975  0.89077273  1.0
+  Pr  Pr3  1  0.49913455  0.99875652  0.10787738  1.0
+  Ti  Ti4  1  0.99955799  0.49855418  0.27319716  1.0
+  Ti  Ti5  1  0.49902901  0.99942705  0.72835336  1.0
+  O  O6  1  0.49917373  0.49950224  0.76673887  1.0
+  O  O7  1  0.99918642  0.99967859  0.76731177  1.0
+  O  O8  1  0.99897312  0.49827746  0.40750749  1.0
+  O  O9  1  0.50052871  0.99938973  0.92966850  1.0
+  O  O10  1  0.00066190  0.49938241  0.06420206  1.0
+  O  O11  1  0.49838221  0.99963239  0.59389771  1.0
+  O  O12  1  0.99927216  0.99865119  0.23405845  1.0
+  O  O13  1  0.49953781  0.49858808  0.23403169  1.0

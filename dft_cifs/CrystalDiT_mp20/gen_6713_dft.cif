@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TbDyTa2O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.13869423
+_cell_length_b   5.35575578
+_cell_length_c   5.52510770
+_cell_angle_alpha   90.19080313
+_cell_angle_beta   89.99655056
+_cell_angle_gamma   96.51161756
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbDyTa2O8
+_chemical_formula_sum   'Tb1 Dy1 Ta2 O8'
+_cell_volume   151.07795522
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.00103763  0.25096213  0.23262031  1.0
+  Dy  Dy1  1  0.99947057  0.74828332  0.76596787  1.0
+  Ta  Ta2  1  0.49954613  0.25006908  0.69226129  1.0
+  Ta  Ta3  1  0.50106423  0.74925255  0.30660736  1.0
+  O  O4  1  0.24750856  0.09933659  0.90914334  1.0
+  O  O5  1  0.26888780  0.99254876  0.43252493  1.0
+  O  O6  1  0.75172543  0.89877576  0.08763930  1.0
+  O  O7  1  0.25349929  0.59925372  0.08338965  1.0
+  O  O8  1  0.73351389  0.50778088  0.43798172  1.0
+  O  O9  1  0.26664591  0.49218470  0.56174537  1.0
+  O  O10  1  0.73166222  0.00583554  0.56662705  1.0
+  O  O11  1  0.74869153  0.40064475  0.91358158  1.0

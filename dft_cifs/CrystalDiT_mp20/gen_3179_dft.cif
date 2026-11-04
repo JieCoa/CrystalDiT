@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Ca3(AlGa)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.43172001
+_cell_length_b   4.02259184
+_cell_length_c   10.28333718
+_cell_angle_alpha   78.74116268
+_cell_angle_beta   102.48978995
+_cell_angle_gamma   90.02506592
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca3(AlGa)2
+_chemical_formula_sum   'Ca3 Al2 Ga2'
+_cell_volume   175.37097047
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00046280  0.00043557  0.99922381  1.0
+  Ca  Ca1  1  0.31532157  0.18803008  0.62007171  1.0
+  Ca  Ca2  1  0.68682081  0.81294959  0.37889988  1.0
+  Al  Al3  1  0.56384537  0.43652023  0.13266259  1.0
+  Al  Al4  1  0.43747601  0.56401710  0.86632405  1.0
+  Ga  Ga5  1  0.86383148  0.63561124  0.71923343  1.0
+  Ga  Ga6  1  0.13765577  0.36628419  0.27936838  1.0

@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Ba(NiP2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.81424957
+_cell_length_b   5.46887085
+_cell_length_c   5.45757960
+_cell_angle_alpha   73.01392860
+_cell_angle_beta   57.83381432
+_cell_angle_gamma   57.84687226
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba(NiP2)2
+_chemical_formula_sum   'Ba1 Ni2 P4'
+_cell_volume   124.36048516
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.99920506  0.00048992  0.00014178  1.0
+  Ni  Ni1  1  0.75375406  0.49812325  0.50048559  1.0
+  Ni  Ni2  1  0.24538851  0.50264460  0.49927449  1.0
+  P  P3  1  0.49921914  0.24250886  0.75608661  1.0
+  P  P4  1  0.25732710  0.24201453  0.24277718  1.0
+  P  P5  1  0.49979272  0.75705746  0.24400143  1.0
+  P  P6  1  0.74118712  0.75811517  0.75735964  1.0

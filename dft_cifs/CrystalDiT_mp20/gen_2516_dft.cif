@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_PmZnCuAs2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.17650411
+_cell_length_b   4.17770717
+_cell_length_c   6.82095658
+_cell_angle_alpha   89.88494515
+_cell_angle_beta   90.00518662
+_cell_angle_gamma   119.98942100
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PmZnCuAs2
+_chemical_formula_sum   'Pm1 Zn1 Cu1 As2'
+_cell_volume   103.07942674
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.66708835  0.33425098  0.98085489  1.0
+  Zn  Zn1  1  0.33291399  0.66563091  0.36979875  1.0
+  Cu  Cu2  1  0.00164671  0.00356480  0.65004293  1.0
+  As  As3  1  0.33505802  0.67015089  0.73800020  1.0
+  As  As4  1  0.99962515  0.99942533  0.25689642  1.0

@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_ThPa(TcC2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.38344715
+_cell_length_b   5.75027290
+_cell_length_c   10.99047367
+_cell_angle_alpha   89.81027411
+_cell_angle_beta   89.99784178
+_cell_angle_gamma   89.99968538
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ThPa(TcC2)2
+_chemical_formula_sum   'Th2 Pa2 Tc4 C8'
+_cell_volume   213.82667470
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Th  Th0  1  0.24941414  0.41612116  0.64152956  1.0
+  Th  Th1  1  0.74933315  0.08449532  0.14135586  1.0
+  Pa  Pa2  1  0.74936293  0.58326143  0.35765449  1.0
+  Pa  Pa3  1  0.24929081  0.91973366  0.85796926  1.0
+  Tc  Tc4  1  0.74926569  0.42106320  0.89871103  1.0
+  Tc  Tc5  1  0.74940627  0.91846947  0.59724089  1.0
+  Tc  Tc6  1  0.24939214  0.08283664  0.39852146  1.0
+  Tc  Tc7  1  0.24934423  0.58090404  0.09677292  1.0
+  C  C8  1  0.24923579  0.34977198  0.25811637  1.0
+  C  C9  1  0.74927682  0.67456564  0.74995410  1.0
+  C  C10  1  0.74930223  0.72511352  0.00957292  1.0
+  C  C11  1  0.74938687  0.15051945  0.75853545  1.0
+  C  C12  1  0.24931746  0.27754231  0.98242574  1.0
+  C  C13  1  0.24931411  0.82566432  0.25065385  1.0
+  C  C14  1  0.24933820  0.77676832  0.50969593  1.0
+  C  C15  1  0.74948987  0.22288232  0.48204337  1.0

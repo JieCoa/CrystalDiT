@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_TbHoSc2O4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.28634142
+_cell_length_b   3.28594457
+_cell_length_c   10.88739064
+_cell_angle_alpha   89.96990989
+_cell_angle_beta   90.03789092
+_cell_angle_gamma   119.99922961
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbHoSc2O4
+_chemical_formula_sum   'Tb1 Ho1 Sc2 O4'
+_cell_volume   101.81941946
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.33453010  0.66849412  0.75013943  1.0
+  Ho  Ho1  1  0.66801515  0.33418294  0.25032220  1.0
+  Sc  Sc2  1  0.00088916  0.00115388  0.49712867  1.0
+  Sc  Sc3  1  0.00183804  0.00138353  0.99973220  1.0
+  O  O4  1  0.66803855  0.33494248  0.60491094  1.0
+  O  O5  1  0.66858798  0.33529114  0.89452622  1.0
+  O  O6  1  0.33496597  0.66802916  0.10814570  1.0
+  O  O7  1  0.33436470  0.66802593  0.39136393  1.0

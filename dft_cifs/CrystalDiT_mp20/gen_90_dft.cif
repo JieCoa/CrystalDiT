@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_SmGe3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.36439098
+_cell_length_b   4.37796647
+_cell_length_c   4.39196783
+_cell_angle_alpha   89.80322129
+_cell_angle_beta   90.43000381
+_cell_angle_gamma   89.94873341
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmGe3
+_chemical_formula_sum   'Sm1 Ge3'
+_cell_volume   83.91512672
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.00089094  0.00134696  0.00005355  1.0
+  Ge  Ge1  1  0.50029711  0.00252998  0.50054083  1.0
+  Ge  Ge2  1  0.49997677  0.50137978  0.99670132  1.0
+  Ge  Ge3  1  0.99972009  0.49902626  0.50023574  1.0

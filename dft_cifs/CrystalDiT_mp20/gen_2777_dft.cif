@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_LiBeN
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.01888057
+_cell_length_b   3.01641646
+_cell_length_c   4.80577861
+_cell_angle_alpha   90.40609862
+_cell_angle_beta   89.88432137
+_cell_angle_gamma   90.00691453
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiBeN
+_chemical_formula_sum   'Li2 Be2 N2'
+_cell_volume   43.76119752
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.24940529  0.24529061  0.37830728  1.0
+  Li  Li1  1  0.74740837  0.75744821  0.62197906  1.0
+  Be  Be2  1  0.24651920  0.75617027  0.99989867  1.0
+  Be  Be3  1  0.74678686  0.25792090  0.00021021  1.0
+  N  N4  1  0.74581177  0.75996749  0.19253545  1.0
+  N  N5  1  0.24736063  0.25479232  0.80751690  1.0

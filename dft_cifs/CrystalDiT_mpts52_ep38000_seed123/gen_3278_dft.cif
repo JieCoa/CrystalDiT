@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_NaMnF3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.63090474
+_cell_length_b   5.62330979
+_cell_length_c   6.09999042
+_cell_angle_alpha   62.41950304
+_cell_angle_beta   62.40844396
+_cell_angle_gamma   59.92425985
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaMnF3
+_chemical_formula_sum   'Na2 Mn2 F6'
+_cell_volume   141.26562689
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.14257027  0.14219341  0.57192202  1.0
+  Na  Na1  1  0.85714363  0.85653334  0.43028876  1.0
+  Mn  Mn2  1  0.34633715  0.34664277  0.96000295  1.0
+  Mn  Mn3  1  0.65272451  0.65175138  0.04386761  1.0
+  F  F4  1  0.94496108  0.54476072  0.23283028  1.0
+  F  F5  1  0.54408779  0.27750931  0.23288296  1.0
+  F  F6  1  0.27867469  0.94443810  0.23485607  1.0
+  F  F7  1  0.72179082  0.05346304  0.76982278  1.0
+  F  F8  1  0.05414484  0.45193266  0.77155543  1.0
+  F  F9  1  0.45378761  0.72197953  0.77126947  1.0

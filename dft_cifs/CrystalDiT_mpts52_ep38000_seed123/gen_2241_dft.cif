@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_Y2GaNi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.19061191
+_cell_length_b   5.37965173
+_cell_length_c   5.37504614
+_cell_angle_alpha   100.79472509
+_cell_angle_beta   112.91385154
+_cell_angle_gamma   112.90242465
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Y2GaNi2
+_chemical_formula_sum   'Y2 Ga1 Ni2'
+_cell_volume   94.26210381
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.49921712  0.70326593  0.29712092  1.0
+  Y  Y1  1  0.49946146  0.29596777  0.70499950  1.0
+  Ga  Ga2  1  0.99909982  0.99889209  0.00121718  1.0
+  Ni  Ni3  1  0.77349466  0.27096030  0.27430474  1.0
+  Ni  Ni4  1  0.22443970  0.72845376  0.72743811  1.0

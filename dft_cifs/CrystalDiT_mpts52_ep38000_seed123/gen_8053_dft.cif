@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_TbGd(PbAu)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.87205932
+_cell_length_b   4.86586216
+_cell_length_c   7.24475133
+_cell_angle_alpha   89.83248229
+_cell_angle_beta   89.89135668
+_cell_angle_gamma   59.97530310
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbGd(PbAu)2
+_chemical_formula_sum   'Tb1 Gd1 Pb2 Au2'
+_cell_volume   148.70187360
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.00017229  0.99880561  0.49658288  1.0
+  Gd  Gd1  1  0.99929441  0.99935685  0.99893747  1.0
+  Pb  Pb2  1  0.33399079  0.33218498  0.75145982  1.0
+  Pb  Pb3  1  0.66595048  0.66587313  0.22846266  1.0
+  Au  Au4  1  0.66638886  0.66544891  0.73311881  1.0
+  Au  Au5  1  0.33308714  0.33245655  0.28813646  1.0

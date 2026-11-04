@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_SmGdInPb
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.45827996
+_cell_length_b   5.47556596
+_cell_length_c   5.47668303
+_cell_angle_alpha   59.86119333
+_cell_angle_beta   60.13992594
+_cell_angle_gamma   60.07011888
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmGdInPb
+_chemical_formula_sum   'Sm1 Gd1 In1 Pb1'
+_cell_volume   115.80187580
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.75045081  0.74888687  0.75080354  1.0
+  Gd  Gd1  1  0.25066732  0.25063594  0.24810247  1.0
+  In  In2  1  0.50059555  0.49967625  0.49768092  1.0
+  Pb  Pb3  1  0.99960680  0.99967818  0.99846402  1.0

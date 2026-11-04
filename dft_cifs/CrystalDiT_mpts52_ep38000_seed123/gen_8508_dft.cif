@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DyHo3(SiPt)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.30789908
+_cell_length_b   7.42534162
+_cell_length_c   6.97246540
+_cell_angle_alpha   89.97500726
+_cell_angle_beta   90.01554787
+_cell_angle_gamma   90.00348844
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyHo3(SiPt)4
+_chemical_formula_sum   'Dy1 Ho3 Si4 Pt4'
+_cell_volume   223.03256011
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.25033196  0.20131393  0.99679010  1.0
+  Ho  Ho1  1  0.25034004  0.29670366  0.49668463  1.0
+  Ho  Ho2  1  0.75080904  0.79642011  0.00493419  1.0
+  Ho  Ho3  1  0.75073820  0.70176830  0.50506520  1.0
+  Si  Si4  1  0.75040394  0.41313434  0.18746786  1.0
+  Si  Si5  1  0.25048718  0.58621941  0.81277723  1.0
+  Si  Si6  1  0.24999021  0.91227140  0.31265334  1.0
+  Si  Si7  1  0.75054404  0.08587178  0.68830691  1.0
+  Pt  Pt8  1  0.74963384  0.08522077  0.30001746  1.0
+  Pt  Pt9  1  0.25059618  0.58542865  0.20152842  1.0
+  Pt  Pt10  1  0.25086808  0.91315420  0.70147040  1.0
+  Pt  Pt11  1  0.75028372  0.41354577  0.79877775  1.0

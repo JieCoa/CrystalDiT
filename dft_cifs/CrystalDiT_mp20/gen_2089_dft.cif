@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_TbGd2(AgGe)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.22819509
+_cell_length_b   7.23920218
+_cell_length_c   7.24574310
+_cell_angle_alpha   60.03534203
+_cell_angle_beta   89.97507937
+_cell_angle_gamma   90.01845137
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbGd2(AgGe)3
+_chemical_formula_sum   'Tb1 Gd2 Ag3 Ge3'
+_cell_volume   192.13819964
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.99977010  0.41141035  0.00202673  1.0
+  Gd  Gd1  1  0.99963607  0.58871360  0.41456912  1.0
+  Gd  Gd2  1  0.99983948  0.00172911  0.58782132  1.0
+  Ag  Ag3  1  0.50059214  0.00073754  0.25037830  1.0
+  Ag  Ag4  1  0.50170450  0.74885659  0.00188111  1.0
+  Ag  Ag5  1  0.49956134  0.25187582  0.75014275  1.0
+  Ge  Ge6  1  0.99921669  0.99941634  0.00167322  1.0
+  Ge  Ge7  1  0.50127427  0.66602354  0.67048628  1.0
+  Ge  Ge8  1  0.50064240  0.33333333  0.33391838  1.0

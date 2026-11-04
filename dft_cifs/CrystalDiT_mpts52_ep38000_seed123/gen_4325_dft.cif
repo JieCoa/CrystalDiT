@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_PmSi3Os
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.24776548
+_cell_length_b   4.25000383
+_cell_length_c   5.81165457
+_cell_angle_alpha   111.59595247
+_cell_angle_beta   111.52169395
+_cell_angle_gamma   89.82903145
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PmSi3Os
+_chemical_formula_sum   'Pm1 Si3 Os1'
+_cell_volume   89.68782490
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.00060121  0.00014213  0.00127062  1.0
+  Si  Si1  1  0.23966573  0.73910924  0.47810786  1.0
+  Si  Si2  1  0.73870176  0.23855133  0.47801992  1.0
+  Si  Si3  1  0.58168270  0.58075873  0.16411039  1.0
+  Os  Os4  1  0.34578740  0.34637718  0.69231031  1.0

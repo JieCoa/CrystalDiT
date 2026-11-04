@@ -297,3 +297,35 @@ for i, cmd in enumerate(after_vasp_cmds, start=1):
         print("Continue to next command...")
     print("--------------------------------------------------")
 """
+
+
+extract_dft_cifs_cmds = [
+    [
+        "python",
+        "eval_script/extract_dft_cifs.py",
+        "--report", "chgnet_results_CrystalDiT/final_sun/final_evaluation_report.csv",
+        "--out", "dft_cifs/CrystalDiT_mp20/"
+    ],
+    # [
+    #     "python", "eval_script/extract_dft_cifs.py",
+    #     "--report", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/final_sun/final_evaluation_report.csv",
+    #     "--chgnet_csv", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/chgnet_results.csv",
+    #     "--dft_dir", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123",
+    #     "--source", "both",
+    #     "--out", "dft_cifs/CrystalDiT_mpts52_ep38000_seed123/"
+    # ],  # 同时与 traj 交叉校验（确认 CSV 无损）
+]
+""" extract dft cifs """
+for i, cmd in enumerate(extract_dft_cifs_cmds, start=1):
+    print("--------------------------------------------------") 
+    print(f"Running command {i}/{len(extract_dft_cifs_cmds)}")
+    print(" ".join(cmd))
+    print("--------------------------------------------------")
+    
+    try:
+        subprocess.run(cmd, check=True)
+        print(f"Command {i} finished successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Command {i} failed with return code {e.returncode}.")
+        print("Continue to next command...")
+    print("--------------------------------------------------")

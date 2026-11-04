@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Tl2Pt3O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.29909718
+_cell_length_b   6.25496421
+_cell_length_c   6.28599445
+_cell_angle_alpha   64.79373810
+_cell_angle_beta   106.80155598
+_cell_angle_gamma   113.82554610
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tl2Pt3O7
+_chemical_formula_sum   'Tl2 Pt3 O7'
+_cell_volume   202.93269296
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tl  Tl0  1  0.62583404  0.36491673  0.44385159  1.0
+  Tl  Tl1  1  0.33524263  0.69067456  0.59211422  1.0
+  Pt  Pt2  1  0.00304978  0.49239807  0.00750322  1.0
+  Pt  Pt3  1  0.98023872  0.98885645  0.50681975  1.0
+  Pt  Pt4  1  0.00170185  0.99005925  0.00769855  1.0
+  O  O5  1  0.17477560  0.17732994  0.71877984  1.0
+  O  O6  1  0.14818556  0.21770784  0.21378352  1.0
+  O  O7  1  0.81940460  0.79342698  0.28158665  1.0
+  O  O8  1  0.82505991  0.23530264  0.86524041  1.0
+  O  O9  1  0.17606128  0.74397672  0.15600105  1.0
+  O  O10  1  0.83938758  0.75277207  0.81517386  1.0
+  O  O11  1  0.67652057  0.04599050  0.40178123  1.0

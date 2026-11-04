@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_UPaSb4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.32040042
+_cell_length_b   4.32837210
+_cell_length_c   8.75003624
+_cell_angle_alpha   89.98582102
+_cell_angle_beta   89.98869850
+_cell_angle_gamma   90.18293001
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   UPaSb4
+_chemical_formula_sum   'U1 Pa1 Sb4'
+_cell_volume   163.62746609
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  1  0.99855002  0.49840100  0.71875409  1.0
+  Pa  Pa1  1  0.49872411  0.99836368  0.27851390  1.0
+  Sb  Sb2  1  0.99852881  0.49799907  0.35635911  1.0
+  Sb  Sb3  1  0.99877209  0.99836152  0.99887175  1.0
+  Sb  Sb4  1  0.49865944  0.49844871  0.99876336  1.0
+  Sb  Sb5  1  0.49898768  0.99837926  0.63814531  1.0

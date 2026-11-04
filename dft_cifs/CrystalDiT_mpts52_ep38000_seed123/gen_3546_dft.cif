@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_EuCrO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.86051865
+_cell_length_b   3.88000552
+_cell_length_c   3.87677192
+_cell_angle_alpha   90.11171693
+_cell_angle_beta   90.14907053
+_cell_angle_gamma   90.01575626
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuCrO3
+_chemical_formula_sum   'Eu1 Cr1 O3'
+_cell_volume   58.06921257
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.99725496  0.99814453  0.99830087  1.0
+  Cr  Cr1  1  0.49944148  0.49902465  0.49918891  1.0
+  O  O2  1  0.50108502  0.50058690  0.99933663  1.0
+  O  O3  1  0.00002975  0.49966968  0.49971773  1.0
+  O  O4  1  0.50182896  0.99938421  0.49973675  1.0

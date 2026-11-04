@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_TiBe2In2Fe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.31586494
+_cell_length_b   4.20795387
+_cell_length_c   5.39816658
+_cell_angle_alpha   90.00578063
+_cell_angle_beta   89.23291420
+_cell_angle_gamma   119.14367368
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TiBe2In2Fe
+_chemical_formula_sum   'Ti1 Be2 In2 Fe1'
+_cell_volume   85.61468388
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.00276386  0.00291660  0.00001020  1.0
+  Be  Be1  1  0.69543883  0.34868685  0.75981323  1.0
+  Be  Be2  1  0.31003166  0.65719240  0.24046265  1.0
+  In  In3  1  0.34913999  0.67589196  0.72014864  1.0
+  In  In4  1  0.65640443  0.32996370  0.27989003  1.0
+  Fe  Fe5  1  0.00288589  0.00304267  0.49970472  1.0

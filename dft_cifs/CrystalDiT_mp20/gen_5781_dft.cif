@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_Pm2SbO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.98060142
+_cell_length_b   3.95399031
+_cell_length_c   7.41210482
+_cell_angle_alpha   105.47145687
+_cell_angle_beta   105.64955012
+_cell_angle_gamma   90.00438433
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pm2SbO2
+_chemical_formula_sum   'Pm2 Sb1 O2'
+_cell_volume   107.93904736
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.66264149  0.66271378  0.32659252  1.0
+  Pm  Pm1  1  0.33478744  0.33405643  0.66987479  1.0
+  Sb  Sb2  1  0.99617853  0.99612239  0.99733635  1.0
+  O  O3  1  0.74957536  0.24898797  0.49971535  1.0
+  O  O4  1  0.24796433  0.74784359  0.49720070  1.0

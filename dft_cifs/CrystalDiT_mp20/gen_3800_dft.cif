@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_EuGdHg2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.99773858
+_cell_length_b   4.99080969
+_cell_length_c   6.31041969
+_cell_angle_alpha   89.97701477
+_cell_angle_beta   71.48556674
+_cell_angle_gamma   89.98429575
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuGdHg2
+_chemical_formula_sum   'Eu1 Gd1 Hg2'
+_cell_volume   119.38879474
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.14150008  0.75050607  0.71992696  1.0
+  Gd  Gd1  1  0.86603162  0.25035644  0.27259381  1.0
+  Hg  Hg2  1  0.41356778  0.75010450  0.17762531  1.0
+  Hg  Hg3  1  0.58615645  0.25028147  0.83152577  1.0

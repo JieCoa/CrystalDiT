@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_TbGdAlTl
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.29102779
+_cell_length_b   5.25000052
+_cell_length_c   5.24641708
+_cell_angle_alpha   90.04476121
+_cell_angle_beta   119.68259222
+_cell_angle_gamma   119.51819989
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbGdAlTl
+_chemical_formula_sum   'Tb1 Gd1 Al1 Tl1'
+_cell_volume   104.24313004
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.49959437  0.74968586  0.24835184  1.0
+  Gd  Gd1  1  0.49887328  0.24881064  0.75053467  1.0
+  Al  Al2  1  0.99686559  0.50006909  0.49825830  1.0
+  Tl  Tl3  1  0.99998927  0.00169199  0.00032825  1.0

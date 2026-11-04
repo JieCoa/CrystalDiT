@@ -1,0 +1,29 @@
+# generated using pymatgen
+data_LaZnSi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.22136358
+_cell_length_b   4.22557477
+_cell_length_c   4.30018290
+_cell_angle_alpha   90.04903986
+_cell_angle_beta   90.06900152
+_cell_angle_gamma   119.91229733
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaZnSi
+_chemical_formula_sum   'La1 Zn1 Si1'
+_cell_volume   66.48724093
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.33439402  0.67157861  0.00176797  1.0
+  Zn  Zn1  1  0.66653723  0.33529427  0.49965528  1.0
+  Si  Si2  1  0.00004638  0.00064349  0.50164512  1.0

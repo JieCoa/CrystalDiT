@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_PaSbPd
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.69310833
+_cell_length_b   4.69886496
+_cell_length_c   7.05378161
+_cell_angle_alpha   90.00097165
+_cell_angle_beta   90.02503244
+_cell_angle_gamma   60.08658393
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PaSbPd
+_chemical_formula_sum   'Pa2 Sb2 Pd2'
+_cell_volume   134.82933185
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pa  Pa0  1  0.00125297  0.99845113  0.50138554  1.0
+  Pa  Pa1  1  0.00199651  0.99870629  0.00064031  1.0
+  Sb  Sb2  1  0.33376170  0.33328298  0.75108774  1.0
+  Sb  Sb3  1  0.66734345  0.66642869  0.25096116  1.0
+  Pd  Pd4  1  0.66666667  0.66844005  0.75115628  1.0
+  Pd  Pd5  1  0.33399002  0.33261232  0.25251946  1.0

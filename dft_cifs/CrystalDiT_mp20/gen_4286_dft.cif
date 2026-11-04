@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_DyHoMgOs
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.97739597
+_cell_length_b   4.98992714
+_cell_length_c   4.98233456
+_cell_angle_alpha   60.14599906
+_cell_angle_beta   60.12730334
+_cell_angle_gamma   60.08014248
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyHoMgOs
+_chemical_formula_sum   'Dy1 Ho1 Mg1 Os1'
+_cell_volume   87.73474992
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.74878051  0.75146461  0.75045123  1.0
+  Ho  Ho1  1  0.24983813  0.24914700  0.25015421  1.0
+  Mg  Mg2  1  0.49990695  0.49712253  0.50131992  1.0
+  Os  Os3  1  0.99849992  0.00493513  0.99868567  1.0

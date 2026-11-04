@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_CePaN2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.53041517
+_cell_length_b   3.53598007
+_cell_length_c   4.98368643
+_cell_angle_alpha   89.84094419
+_cell_angle_beta   89.85045792
+_cell_angle_gamma   89.88924091
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CePaN2
+_chemical_formula_sum   'Ce1 Pa1 N2'
+_cell_volume   62.21317131
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50105960  0.49895491  0.49970393  1.0
+  Pa  Pa1  1  0.00073799  0.99753197  0.99946276  1.0
+  N  N2  1  0.00007330  0.99962757  0.50247432  1.0
+  N  N3  1  0.50123692  0.49833102  0.99932555  1.0

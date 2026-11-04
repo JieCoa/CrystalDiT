@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_V3CuS6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.99511091
+_cell_length_b   5.99605112
+_cell_length_c   5.38007612
+_cell_angle_alpha   89.62976994
+_cell_angle_beta   89.70614089
+_cell_angle_gamma   121.78659181
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   V3CuS6
+_chemical_formula_sum   'V3 Cu1 S6'
+_cell_volume   164.37929501
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  V  V0  1  0.30975753  0.68602622  0.49835068  1.0
+  V  V1  1  0.66699614  0.32917766  0.49957987  1.0
+  V  V2  1  0.98589128  0.00946275  0.99863160  1.0
+  Cu  Cu3  1  0.60368598  0.39412203  0.00066569  1.0
+  S  S4  1  0.32382236  0.00787869  0.23834743  1.0
+  S  S5  1  0.99560813  0.35137064  0.23840067  1.0
+  S  S6  1  0.66695729  0.69392076  0.28518784  1.0
+  S  S7  1  0.98839125  0.67171810  0.75880230  1.0
+  S  S8  1  0.64449096  0.00026655  0.75849866  1.0
+  S  S9  1  0.30361646  0.32983022  0.71385256  1.0

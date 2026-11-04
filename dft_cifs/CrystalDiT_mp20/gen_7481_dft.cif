@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_TbEuCu4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.31127601
+_cell_length_b   5.54667979
+_cell_length_c   5.55692078
+_cell_angle_alpha   79.22382131
+_cell_angle_beta   67.19593432
+_cell_angle_gamma   67.05440115
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbEuCu4
+_chemical_formula_sum   'Tb1 Eu1 Cu4'
+_cell_volume   112.70402276
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.53317570  0.71686088  0.22076700  1.0
+  Eu  Eu1  1  0.45733606  0.29090707  0.79082797  1.0
+  Cu  Cu2  1  0.83624014  0.10840130  0.21861493  1.0
+  Cu  Cu3  1  0.16444708  0.28922732  0.37936721  1.0
+  Cu  Cu4  1  0.83530891  0.71667446  0.61405750  1.0
+  Cu  Cu5  1  0.16433782  0.88052830  0.79071208  1.0

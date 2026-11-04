@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_HoInNi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.57403817
+_cell_length_b   4.57197761
+_cell_length_c   4.58443380
+_cell_angle_alpha   59.93985382
+_cell_angle_beta   59.93182226
+_cell_angle_gamma   60.13823423
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoInNi2
+_chemical_formula_sum   'Ho1 In1 Ni2'
+_cell_volume   67.79590948
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.49852755  0.50065857  0.50029252  1.0
+  In  In1  1  0.99987226  0.99969337  0.99990278  1.0
+  Ni  Ni2  1  0.24782814  0.25127165  0.25034346  1.0
+  Ni  Ni3  1  0.74951207  0.75010491  0.75079778  1.0

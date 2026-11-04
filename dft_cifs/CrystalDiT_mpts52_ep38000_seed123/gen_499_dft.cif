@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Tb3(FeGe)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.21253966
+_cell_length_b   6.76307726
+_cell_length_c   7.85950871
+_cell_angle_alpha   64.66833884
+_cell_angle_beta   74.41637001
+_cell_angle_gamma   89.99638521
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tb3(FeGe)4
+_chemical_formula_sum   'Tb3 Fe4 Ge4'
+_cell_volume   193.24066280
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.12742735  0.12538776  0.74492294  1.0
+  Tb  Tb1  1  0.87260506  0.87315050  0.25477787  1.0
+  Tb  Tb2  1  0.99956103  0.49916051  0.00029681  1.0
+  Fe  Fe3  1  0.67727714  0.85803678  0.64503608  1.0
+  Fe  Fe4  1  0.32336433  0.14087096  0.35444659  1.0
+  Fe  Fe5  1  0.67744072  0.49591644  0.64420978  1.0
+  Fe  Fe6  1  0.32245789  0.50249608  0.35572212  1.0
+  Ge  Ge7  1  0.77874569  0.27705586  0.44323286  1.0
+  Ge  Ge8  1  0.49944186  0.80109438  0.00061205  1.0
+  Ge  Ge9  1  0.22118551  0.72157712  0.55678386  1.0
+  Ge  Ge10  1  0.49991019  0.19755268  0.99943221  1.0

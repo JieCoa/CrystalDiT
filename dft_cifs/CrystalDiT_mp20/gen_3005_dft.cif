@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Cd(PtO2)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.23487404
+_cell_length_b   6.31311349
+_cell_length_c   6.31751368
+_cell_angle_alpha   109.46921951
+_cell_angle_beta   89.98599030
+_cell_angle_gamma   90.01714080
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cd(PtO2)3
+_chemical_formula_sum   'Cd1 Pt3 O6'
+_cell_volume   121.63995172
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cd  Cd0  1  0.99931212  0.50067765  0.50101729  1.0
+  Pt  Pt1  1  0.49932864  0.50075311  0.00096386  1.0
+  Pt  Pt2  1  0.49939148  0.00090568  0.50123339  1.0
+  Pt  Pt3  1  0.99938074  0.00085503  0.00115985  1.0
+  O  O4  1  0.49947511  0.66213158  0.33969548  1.0
+  O  O5  1  0.99923596  0.92559380  0.66650463  1.0
+  O  O6  1  0.99921576  0.33567816  0.07659381  1.0
+  O  O7  1  0.99959946  0.07594516  0.33569408  1.0
+  O  O8  1  0.49920624  0.33949012  0.66246723  1.0
+  O  O9  1  0.99945043  0.66614265  0.92566171  1.0

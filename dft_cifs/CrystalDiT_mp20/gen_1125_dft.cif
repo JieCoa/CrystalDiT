@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ho3Er(NiO3)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.65983015
+_cell_length_b   5.18460501
+_cell_length_c   7.38113645
+_cell_angle_alpha   89.82967921
+_cell_angle_beta   90.00481402
+_cell_angle_gamma   90.09519445
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho3Er(NiO3)4
+_chemical_formula_sum   'Ho3 Er1 Ni4 O12'
+_cell_volume   216.59069146
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.58357485  0.47696244  0.74951981  1.0
+  Ho  Ho1  1  0.41775931  0.52106169  0.25057960  1.0
+  Ho  Ho2  1  0.08290012  0.02415104  0.75045675  1.0
+  Er  Er3  1  0.91686811  0.97491708  0.24912943  1.0
+  Ni  Ni4  1  0.50045891  0.99898748  0.00009136  1.0
+  Ni  Ni5  1  0.50012244  0.99914492  0.49971135  1.0
+  Ni  Ni6  1  0.00078410  0.49925581  0.00041949  1.0
+  Ni  Ni7  1  0.00020790  0.49950307  0.49962715  1.0
+  O  O8  1  0.81354218  0.19604795  0.55507424  1.0
+  O  O9  1  0.18565594  0.80345405  0.44360069  1.0
+  O  O10  1  0.31582759  0.30333565  0.55255983  1.0
+  O  O11  1  0.81548181  0.19538765  0.94734950  1.0
+  O  O12  1  0.31483235  0.30346666  0.94563697  1.0
+  O  O13  1  0.68747942  0.69570596  0.05494901  1.0
+  O  O14  1  0.03540690  0.38456106  0.24869446  1.0
+  O  O15  1  0.18541161  0.80310215  0.05443513  1.0
+  O  O16  1  0.96614838  0.61207027  0.75142047  1.0
+  O  O17  1  0.46399988  0.88708752  0.74801771  1.0
+  O  O18  1  0.68580379  0.69617061  0.44665540  1.0
+  O  O19  1  0.53730474  0.11051376  0.25177769  1.0

@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_Pm2SmInC
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.09201276
+_cell_length_b   5.05782255
+_cell_length_c   5.08749899
+_cell_angle_alpha   89.98819302
+_cell_angle_beta   89.99851910
+_cell_angle_gamma   90.00271593
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pm2SmInC
+_chemical_formula_sum   'Pm2 Sm1 In1 C1'
+_cell_volume   131.02597431
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.00083592  0.50059686  0.49874235  1.0
+  Pm  Pm1  1  0.50078012  0.50234575  0.99800014  1.0
+  Sm  Sm2  1  0.50028691  0.00169742  0.50028832  1.0
+  In  In3  1  0.00254213  0.00041124  0.99940464  1.0
+  C  C4  1  0.49972119  0.50031758  0.49773394  1.0

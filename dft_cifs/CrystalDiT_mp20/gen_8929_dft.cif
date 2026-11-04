@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_DyHo(CuAs2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.88241511
+_cell_length_b   3.88443162
+_cell_length_c   9.91200721
+_cell_angle_alpha   90.01754384
+_cell_angle_beta   89.99732740
+_cell_angle_gamma   89.98706427
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyHo(CuAs2)2
+_chemical_formula_sum   'Dy1 Ho1 Cu2 As4'
+_cell_volume   149.48273202
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.99929549  0.49957968  0.23806400  1.0
+  Ho  Ho1  1  0.49889796  0.00197747  0.76376924  1.0
+  Cu  Cu2  1  0.99955346  0.99961507  0.50128684  1.0
+  Cu  Cu3  1  0.49993992  0.50089615  0.50048075  1.0
+  As  As4  1  0.49974397  0.99986081  0.34053185  1.0
+  As  As5  1  0.00111127  0.99969869  0.00114953  1.0
+  As  As6  1  0.50128584  0.49930338  0.00075843  1.0
+  As  As7  1  0.99996291  0.49983653  0.66168968  1.0

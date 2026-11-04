@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_SmEuGe4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.11266363
+_cell_length_b   4.12490942
+_cell_length_c   8.81038764
+_cell_angle_alpha   75.91034151
+_cell_angle_beta   76.01508873
+_cell_angle_gamma   90.00426051
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmEuGe4
+_chemical_formula_sum   'Sm1 Eu1 Ge4'
+_cell_volume   140.39352059
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.25212101  0.74998775  0.49805095  1.0
+  Eu  Eu1  1  0.99775742  0.00104421  0.00066516  1.0
+  Ge  Ge2  1  0.58018759  0.58287504  0.83474844  1.0
+  Ge  Ge3  1  0.41677515  0.41983223  0.16521670  1.0
+  Ge  Ge4  1  0.82631603  0.32396192  0.34596698  1.0
+  Ge  Ge5  1  0.67481086  0.17366533  0.65498454  1.0

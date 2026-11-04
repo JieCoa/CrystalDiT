@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_CePr2Nd(InCu2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.03443176
+_cell_length_b   7.60835666
+_cell_length_c   7.61041910
+_cell_angle_alpha   90.76324177
+_cell_angle_beta   90.00877667
+_cell_angle_gamma   89.99253796
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CePr2Nd(InCu2)2
+_chemical_formula_sum   'Ce1 Pr2 Nd1 In2 Cu4'
+_cell_volume   233.58409502
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50058604  0.67652647  0.17663114  1.0
+  Pr  Pr1  1  0.50033750  0.82066783  0.67691266  1.0
+  Pr  Pr2  1  0.50041869  0.17924230  0.32355766  1.0
+  Nd  Nd3  1  0.50058834  0.32459700  0.82449893  1.0
+  In  In4  1  0.00045302  0.50060449  0.50001464  1.0
+  In  In5  1  0.00086048  0.00025917  0.00036487  1.0
+  Cu  Cu6  1  0.00026706  0.12168834  0.62326376  1.0
+  Cu  Cu7  1  0.00037597  0.38519691  0.12140742  1.0
+  Cu  Cu8  1  0.99959754  0.87678945  0.37542553  1.0
+  Cu  Cu9  1  0.00032850  0.62154640  0.88560266  1.0

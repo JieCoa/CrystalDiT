@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_MnNi2As
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.68853238
+_cell_length_b   4.48578423
+_cell_length_c   3.68788232
+_cell_angle_alpha   114.53623329
+_cell_angle_beta   89.98047876
+_cell_angle_gamma   114.42133869
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnNi2As
+_chemical_formula_sum   'Mn1 Ni2 As1'
+_cell_volume   49.44968678
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.49979975  0.00014125  0.49964938  1.0
+  Ni  Ni1  1  0.25091296  0.50107393  0.75335981  1.0
+  Ni  Ni2  1  0.75175382  0.50140911  0.25227890  1.0
+  As  As3  1  0.99692742  0.99470975  0.99676475  1.0

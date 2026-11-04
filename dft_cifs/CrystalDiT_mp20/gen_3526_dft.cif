@@ -1,0 +1,30 @@
+# generated using pymatgen
+data_PmSnHg2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.26502352
+_cell_length_b   5.22853729
+_cell_length_c   5.25710116
+_cell_angle_alpha   60.39496574
+_cell_angle_beta   59.94333557
+_cell_angle_gamma   59.98010790
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PmSnHg2
+_chemical_formula_sum   'Pm1 Sn1 Hg2'
+_cell_volume   102.57424870
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pm  Pm0  1  0.50039851  0.49825941  0.50187846  1.0
+  Sn  Sn1  1  0.00068956  0.00233436  0.99971292  1.0
+  Hg  Hg2  1  0.75054567  0.74882851  0.75243057  1.0
+  Hg  Hg3  1  0.25098654  0.24969657  0.24813772  1.0

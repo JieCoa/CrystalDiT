@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_La3CeGe4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.48778052
+_cell_length_b   4.19602007
+_cell_length_c   11.23803038
+_cell_angle_alpha   89.99333275
+_cell_angle_beta   89.95579728
+_cell_angle_gamma   89.97436822
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La3CeGe4
+_chemical_formula_sum   'La3 Ce1 Ge4'
+_cell_volume   211.62120943
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.00007202  0.19343076  0.85953108  1.0
+  La  La1  1  0.99926192  0.73813467  0.13901065  1.0
+  La  La2  1  0.49977300  0.27389541  0.36395166  1.0
+  Ce  Ce3  1  0.49963560  0.74932127  0.63786203  1.0
+  Ge  Ge4  1  0.99983420  0.77887644  0.42783128  1.0
+  Ge  Ge5  1  0.99944404  0.25419646  0.58415106  1.0
+  Ge  Ge6  1  0.49983690  0.68524006  0.91730118  1.0
+  Ge  Ge7  1  0.49932771  0.23601499  0.07827440  1.0

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Tb3Dy(CoO3)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.24092506
+_cell_length_b   5.63839099
+_cell_length_c   7.49346095
+_cell_angle_alpha   89.86954012
+_cell_angle_beta   90.44630427
+_cell_angle_gamma   89.88778444
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tb3Dy(CoO3)4
+_chemical_formula_sum   'Tb3 Dy1 Co4 O12'
+_cell_volume   221.42692906
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.47744630  0.42237096  0.25112362  1.0
+  Tb  Tb1  1  0.97732923  0.07348441  0.74981218  1.0
+  Tb  Tb2  1  0.02050784  0.92350636  0.25026499  1.0
+  Dy  Dy3  1  0.52085711  0.57565285  0.74896188  1.0
+  Co  Co4  1  0.49883333  0.99851705  0.50033676  1.0
+  Co  Co5  1  0.99911661  0.49859031  0.50047537  1.0
+  Co  Co6  1  0.99900725  0.49860359  0.99967759  1.0
+  Co  Co7  1  0.49883228  0.99843678  0.99987558  1.0
+  O  O8  1  0.19988848  0.19036497  0.44906379  1.0
+  O  O9  1  0.29483707  0.69001270  0.05144204  1.0
+  O  O10  1  0.69622404  0.30466373  0.55128025  1.0
+  O  O11  1  0.70221509  0.30811006  0.94758505  1.0
+  O  O12  1  0.79683710  0.80572079  0.55170138  1.0
+  O  O13  1  0.19567864  0.19393335  0.05060919  1.0
+  O  O14  1  0.39765946  0.97039256  0.75326231  1.0
+  O  O15  1  0.80125320  0.80228683  0.94877642  1.0
+  O  O16  1  0.89747092  0.52597337  0.25349765  1.0
+  O  O17  1  0.30082794  0.69336836  0.45011991  1.0
+  O  O18  1  0.60003868  0.02502507  0.24692451  1.0
+  O  O19  1  0.10316436  0.47057057  0.74666586  1.0
