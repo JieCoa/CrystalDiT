@@ -5,6 +5,7 @@
 /datasets/
 /output/
 
+
 chgnet_results_CrystalDiT/
 chgnet_results_CrystalDiT_seed123/
 chgnet_results_ADiT/
@@ -18,6 +19,10 @@ chgnet_results_CrystalDiT_mpts52_seed123/
 chgnet_results_CrystalDiT_mpts52_seed222/
 chgnet_results_CrystalDiT_mpts52_ep38000/
 chgnet_results_CrystalDiT_mpts52_ep38000_seed123/
+chgnet_results_CrystalDiT_mpts52_ep36500_seed123/
+chgnet_results_CrystalDiT_mpts52_ep36500_seed333/
+
+chgnet_results_CrystalDiT_mpts52_ep47250/
 
 chgnet_results_CrystalDiT_seed222/
 

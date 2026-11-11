@@ -62,6 +62,21 @@ def extract_epoch_from_filename(filename):
     match = re.search(r'epoch_(\d+)', filename)
     return int(match.group(1)) if match else 0
 
+def output_path(folder_path, filename, window_size=None):
+    """
+    Build an output path tagged with the smoothing window, e.g.
+    'balance_score_alpha_1.0.png' -> 'balance_score_alpha_1.0_window_10.png'.
+    
+    Tagging keeps runs with different --window_size from overwriting each other.
+    """
+    path = Path(folder_path) / filename
+    if window_size is None:
+        return path
+    tag = f"window_{int(window_size)}"
+    if tag in path.stem:
+        return path
+    return path.with_name(f"{path.stem}_{tag}{path.suffix}")
+
 def smooth_scores(results_dict, window_size=5):
     """
     Apply moving average smoothing to balance scores for all alpha values.
@@ -209,7 +224,7 @@ def process_results_folder(folder_path, alpha_values=None, max_epoch=50000):
     
     return results_dict
 
-def create_quality_plots(results_dict, folder_path, show_smoothed=True):
+def create_quality_plots(results_dict, folder_path, show_smoothed=True, window_size=None):
     """Create quality metric plots vs epoch for alpha=1.0."""
     
     # Use alpha=1.0 for quality plots (or first available alpha)
@@ -246,7 +261,7 @@ def create_quality_plots(results_dict, folder_path, show_smoothed=True):
     ax.legend()
     
     plt.tight_layout()
-    quality_path = Path(folder_path) / "quality_composite_vs_epoch.png"
+    quality_path = output_path(folder_path, "quality_composite_vs_epoch.png", window_size)
     plt.savefig(quality_path, dpi=300, bbox_inches='tight')
     plt.show()
     plot_paths.append(quality_path)
@@ -284,14 +299,14 @@ def create_quality_plots(results_dict, folder_path, show_smoothed=True):
         ax.set_ylim(0, 1.05)
     
     plt.tight_layout()
-    individual_path = Path(folder_path) / "individual_quality_metrics_vs_epoch.png"
+    individual_path = output_path(folder_path, "individual_quality_metrics_vs_epoch.png", window_size)
     plt.savefig(individual_path, dpi=300, bbox_inches='tight')
     plt.show()
     plot_paths.append(individual_path)
     print(f"Individual quality metrics plot saved to: {individual_path}")
     
     return plot_paths
-def create_visualizations(results_dict, folder_path, show_smoothed=True):
+def create_visualizations(results_dict, folder_path, show_smoothed=True, window_size=None):
     """Create visualizations for multiple alpha values."""
     
     if not results_dict:
@@ -306,7 +321,7 @@ def create_visualizations(results_dict, folder_path, show_smoothed=True):
     
     # First create quality plots
     print("Creating quality metric plots...")
-    quality_paths = create_quality_plots(results_dict, folder_path, show_smoothed)
+    quality_paths = create_quality_plots(results_dict, folder_path, show_smoothed, window_size)
     plot_paths.extend(quality_paths)
     
     # Create individual plots for each alpha
@@ -387,7 +402,7 @@ def create_visualizations(results_dict, folder_path, show_smoothed=True):
         plt.tight_layout()
         
         # Save plot
-        plot_path = Path(folder_path) / f"balance_score_alpha_{alpha:.1f}.png"
+        plot_path = output_path(folder_path, f"balance_score_alpha_{alpha:.1f}.png", window_size)
         plt.savefig(plot_path, dpi=300, bbox_inches='tight')
         plt.show()
         plot_paths.append(plot_path)
@@ -423,7 +438,7 @@ def create_visualizations(results_dict, folder_path, show_smoothed=True):
     
     plt.tight_layout()
     
-    comparison_path = Path(folder_path) / "balance_score_alpha_comparison.png"
+    comparison_path = output_path(folder_path, "balance_score_alpha_comparison.png", window_size)
     plt.savefig(comparison_path, dpi=300, bbox_inches='tight')
     plt.show()
     plot_paths.append(comparison_path)
@@ -540,14 +555,14 @@ def main(folder_path, alpha=None, window_size=5, max_epoch=50000):
     
     # Create visualizations
     print("Creating visualizations...")
-    plot_paths = create_visualizations(results_dict, folder_path, use_smoothed)
+    plot_paths = create_visualizations(results_dict, folder_path, use_smoothed, window_size)
     
     # Print results
     print_top_results(results_dict, use_smoothed=use_smoothed)
     
     # Save CSV files
     for alpha in alpha_values:
-        output_file = Path(folder_path) / f"balance_score_analysis_alpha_{alpha:.1f}.csv"
+        output_file = output_path(folder_path, f"balance_score_analysis_alpha_{alpha:.1f}.csv", window_size)
         results_dict[alpha].to_csv(output_file, index=False)
         print(f"Results for alpha={alpha} saved to: {output_file}")
     

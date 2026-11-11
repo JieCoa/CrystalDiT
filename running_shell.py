@@ -79,7 +79,7 @@ sample_cmds = [
     [
         "python",
         "generate_crystals.py",
-        "--checkpoint", "output/crystaldit_mpts52/checkpoint_epoch_38000.pt",
+        "--checkpoint", "output/crystaldit_mpts52/checkpoint_epoch_47250.pt",
         "--max_atoms", "52",
         "--hidden_size", "512",
         "--depth", "18",
@@ -87,7 +87,7 @@ sample_cmds = [
         "--diffusion_steps", "1000",
         "--num_samples", "10000",
         "--batch_size", "64",
-        "--output_dir", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_38000_generated",
+        "--output_dir", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_47250_generated",
         "--device", "cuda",
         "--use_multi_gpu"
     ],
@@ -203,15 +203,15 @@ chgnet_cmds = [
     [
         "python", 
         "eval_script/chgnet_process.py",
-        "--cif_folder", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_38000_generated",
-        "--csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_38000_generated_results.csv",
+        "--cif_folder", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_36500_generated",
+        "--csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_36500_generated_results.csv",
         "--mp_hull_path", "datasets/mp_hull/2024-08-07-ppd-mp.pkl",
         "--sample_size", "500",
         "--max_steps", "2500",
         "--dft_threshold", "0.5",
-        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep38000_seed222",
+        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed333",
         "--un_only",
-        "--random_seed", "222"
+        "--random_seed", "333"
     ],  # CrystalDiT_mpts52
 ]
 """ chgnet relaxation 
@@ -241,12 +241,12 @@ create_traj_cmds = [
     [
         "python",
         "eval_script/create_traj_for_ehull.py",
-        "--input-dir", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/dft_un",
-        "--output-dir", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/dft_un",
+        "--input-dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/dft_un",
+        "--output-dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/dft_un",
         "--verbose"
     ],  # mpts-52
 ]
-""" create traj file 
+""" create traj file """
 for i, cmd in enumerate(create_traj_cmds, start=1):
     print("--------------------------------------------------")
     print(f"Running command {i}/{len(create_traj_cmds)}")
@@ -260,7 +260,7 @@ for i, cmd in enumerate(create_traj_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
-"""
+
 
 after_vasp_cmds = [
     # [
@@ -274,15 +274,15 @@ after_vasp_cmds = [
     # ]  # mp-20
     [
         "python", "eval_script/dft_post_processor.py",
-        "--chgnet_csv", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/chgnet_results.csv",
-        "--dft_results_folder", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123",
-        "--original_csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_38000_generated_results.csv",
+        "--chgnet_csv", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/chgnet_results.csv",
+        "--dft_results_folder", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123",
+        "--original_csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_36500_generated_results.csv",
         "--mp_hull_path", "datasets/mp_hull/2024-08-07-ppd-mp.pkl",
-        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep38000_seed123/final_sun",
+        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/final_sun",
         "--un_only"
     ]  # mpts-52
 ]
-""" dft post processor 
+""" dft post processor """
 for i, cmd in enumerate(after_vasp_cmds, start=1):
     print("--------------------------------------------------")
     print(f"Running command {i}/{len(after_vasp_cmds)}")
@@ -296,7 +296,6 @@ for i, cmd in enumerate(after_vasp_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
-"""
 
 
 extract_dft_cifs_cmds = [
@@ -315,7 +314,7 @@ extract_dft_cifs_cmds = [
     #     "--out", "dft_cifs/CrystalDiT_mpts52_ep38000_seed123/"
     # ],  # 同时与 traj 交叉校验（确认 CSV 无损）
 ]
-""" extract dft cifs """
+""" extract dft cifs 
 for i, cmd in enumerate(extract_dft_cifs_cmds, start=1):
     print("--------------------------------------------------") 
     print(f"Running command {i}/{len(extract_dft_cifs_cmds)}")
@@ -329,3 +328,4 @@ for i, cmd in enumerate(extract_dft_cifs_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
+"""

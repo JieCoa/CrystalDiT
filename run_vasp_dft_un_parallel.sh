@@ -10,10 +10,10 @@ set -euo pipefail
 BATCH_START_TIME=$(date +%s)
 BATCH_START_DISPLAY=$(date '+%Y-%m-%d %H:%M:%S')
 
-ROOT_DIR="/mnt/disk002/CaoJie_Workspace/CrystalDiT/chgnet_results_CrystalDiT_mpts52_ep38000_seed123"
+ROOT_DIR="/mnt/disk002/CaoJie_Workspace/CrystalDiT/chgnet_results_CrystalDiT_mpts52_ep36500_seed333"
 DFT_DIR="${ROOT_DIR}/dft_un"
 
-NP_PER_JOB=10
+NP_PER_JOB=11
 MAX_PARALLEL_JOBS=4
 
 MPIRUN_BIN="${MPIRUN_BIN:-mpirun}"
