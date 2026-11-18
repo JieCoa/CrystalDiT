@@ -79,7 +79,7 @@ sample_cmds = [
     [
         "python",
         "generate_crystals.py",
-        "--checkpoint", "output/crystaldit_mpts52/checkpoint_epoch_47250.pt",
+        "--checkpoint", "output/crystaldit_mpts52/checkpoint_epoch_28500.pt",
         "--max_atoms", "52",
         "--hidden_size", "512",
         "--depth", "18",
@@ -87,7 +87,7 @@ sample_cmds = [
         "--diffusion_steps", "1000",
         "--num_samples", "10000",
         "--batch_size", "64",
-        "--output_dir", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_47250_generated",
+        "--output_dir", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_28500_generated",
         "--device", "cuda",
         "--use_multi_gpu"
     ],
@@ -203,15 +203,15 @@ chgnet_cmds = [
     [
         "python", 
         "eval_script/chgnet_process.py",
-        "--cif_folder", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_36500_generated",
-        "--csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_36500_generated_results.csv",
+        "--cif_folder", "crystaldit_mpts52_crystals_ma52/checkpoint_epoch_28500_generated",
+        "--csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_28500_generated_results.csv",
         "--mp_hull_path", "datasets/mp_hull/2024-08-07-ppd-mp.pkl",
         "--sample_size", "500",
         "--max_steps", "2500",
         "--dft_threshold", "0.5",
-        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed333",
+        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep28500",
         "--un_only",
-        "--random_seed", "333"
+        # "--random_seed", "333"
     ],  # CrystalDiT_mpts52
 ]
 """ chgnet relaxation 
@@ -241,8 +241,8 @@ create_traj_cmds = [
     [
         "python",
         "eval_script/create_traj_for_ehull.py",
-        "--input-dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/dft_un",
-        "--output-dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/dft_un",
+        "--input-dir", "chgnet_results_CrystalDiT_mpts52_ep28500/dft_un",
+        "--output-dir", "chgnet_results_CrystalDiT_mpts52_ep28500/dft_un",
         "--verbose"
     ],  # mpts-52
 ]
@@ -274,11 +274,11 @@ after_vasp_cmds = [
     # ]  # mp-20
     [
         "python", "eval_script/dft_post_processor.py",
-        "--chgnet_csv", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/chgnet_results.csv",
-        "--dft_results_folder", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123",
-        "--original_csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_36500_generated_results.csv",
+        "--chgnet_csv", "chgnet_results_CrystalDiT_mpts52_ep28500/chgnet_results.csv",
+        "--dft_results_folder", "chgnet_results_CrystalDiT_mpts52_ep28500",
+        "--original_csv_file", "crystaldit_mpts52_crystals_ma52_flowmm_aligned_analysis/checkpoint_epoch_28500_generated_results.csv",
         "--mp_hull_path", "datasets/mp_hull/2024-08-07-ppd-mp.pkl",
-        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep36500_seed123/final_sun",
+        "--output_dir", "chgnet_results_CrystalDiT_mpts52_ep28500/final_sun",
         "--un_only"
     ]  # mpts-52
 ]
