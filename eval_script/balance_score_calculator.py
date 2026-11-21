@@ -361,13 +361,13 @@ def create_visualizations(results_dict, folder_path, show_smoothed=True, window_
         max_epoch = results_df['epoch'].max()
         epoch_range = max_epoch - min_epoch
         
-        stage_1_max = min_epoch + 0.3 * epoch_range
-        stage_2_max = min_epoch + 0.6 * epoch_range
+        stage_1_max = min_epoch + 0.33 * epoch_range
+        stage_2_max = min_epoch + 0.67 * epoch_range
         
         stages = [
-            ("Early (0-30%)", results_df[results_df['epoch'] <= stage_1_max], 'red'),
-            ("Mid (31-60%)", results_df[(results_df['epoch'] > stage_1_max) & (results_df['epoch'] <= stage_2_max)], 'orange'),
-            ("Late (61-100%)", results_df[results_df['epoch'] > stage_2_max], 'green')
+            ("Early (0-33%)", results_df[results_df['epoch'] <= stage_1_max], 'red'),
+            ("Mid (34-66%)", results_df[(results_df['epoch'] > stage_1_max) & (results_df['epoch'] <= stage_2_max)], 'orange'),
+            ("Late (67-100%)", results_df[results_df['epoch'] > stage_2_max], 'green')
         ]
         
         # Mark best point in each stage
@@ -484,13 +484,13 @@ def print_top_results(results_dict, top_n=3, use_smoothed=True):
         max_epoch = results_df['epoch'].max()
         epoch_range = max_epoch - min_epoch
         
-        stage_1_max = min_epoch + 0.3 * epoch_range
-        stage_2_max = min_epoch + 0.6 * epoch_range
+        stage_1_max = min_epoch + 0.33 * epoch_range
+        stage_2_max = min_epoch + 0.67 * epoch_range
         
         stages = [
-            ("Early (0-30%)", results_df[results_df['epoch'] <= stage_1_max]),
-            ("Mid (31-60%)", results_df[(results_df['epoch'] > stage_1_max) & (results_df['epoch'] <= stage_2_max)]),
-            ("Late (61-100%)", results_df[results_df['epoch'] > stage_2_max])
+            ("Early (0-33%)", results_df[results_df['epoch'] <= stage_1_max]),
+            ("Mid (34-66%)", results_df[(results_df['epoch'] > stage_1_max) & (results_df['epoch'] <= stage_2_max)]),
+            ("Late (67-100%)", results_df[results_df['epoch'] > stage_2_max])
         ]
         
         for stage_name, stage_df in stages:

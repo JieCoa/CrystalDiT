@@ -214,7 +214,7 @@ chgnet_cmds = [
         # "--random_seed", "333"
     ],  # CrystalDiT_mpts52
 ]
-""" chgnet relaxation 
+""" chgnet relaxation """
 for i, cmd in enumerate(chgnet_cmds, start=1):
     print("--------------------------------------------------")
     print(f"Running command {i}/{len(chgnet_cmds)}")
@@ -228,7 +228,7 @@ for i, cmd in enumerate(chgnet_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
-"""
+
 
 create_traj_cmds = [
     # [
@@ -246,7 +246,7 @@ create_traj_cmds = [
         "--verbose"
     ],  # mpts-52
 ]
-""" create traj file """
+""" create traj file 
 for i, cmd in enumerate(create_traj_cmds, start=1):
     print("--------------------------------------------------")
     print(f"Running command {i}/{len(create_traj_cmds)}")
@@ -260,7 +260,7 @@ for i, cmd in enumerate(create_traj_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
-
+"""
 
 after_vasp_cmds = [
     # [
@@ -282,7 +282,7 @@ after_vasp_cmds = [
         "--un_only"
     ]  # mpts-52
 ]
-""" dft post processor """
+""" dft post processor 
 for i, cmd in enumerate(after_vasp_cmds, start=1):
     print("--------------------------------------------------")
     print(f"Running command {i}/{len(after_vasp_cmds)}")
@@ -296,7 +296,7 @@ for i, cmd in enumerate(after_vasp_cmds, start=1):
         print(f"Command {i} failed with return code {e.returncode}.")
         print("Continue to next command...")
     print("--------------------------------------------------")
-
+"""
 
 extract_dft_cifs_cmds = [
     [
