@@ -459,6 +459,7 @@ class GlobalDataManager:
         self.reference_datasets = {}
         self.all_structures = {}  # {folder_name/file_name: structure}
         self.all_crystals = {}    # {folder_name/file_name: crystal}
+        self.generated_counts = {}  # Original CIF counts before parsing/filtering
     
     def load_reference_datasets(self):
         """Load reference datasets"""
@@ -512,7 +513,8 @@ class GlobalDataManager:
             if not folder_path.is_dir():
                 continue
                 
-            cif_files = list(folder_path.glob("*.cif"))
+            cif_files = [path for path in folder_path.glob("*.cif") if path.is_file()]
+            self.generated_counts[folder_path.name] = len(cif_files)
             for cif_file in cif_files:
                 all_cif_files.append(cif_file)
                 folder_names.append(folder_path.name)
@@ -874,15 +876,17 @@ class BatchMetricsCalculator:
                     un_count += 1
             
             total_count = len(detailed_results)
+            generated_count = self.data_manager.generated_counts[folder_name]
             
             results[folder_name] = {
                 "unique_rate": unique_count / total_count if total_count > 0 else 0,
                 "novel_rate": novel_count / total_count if total_count > 0 else 0,
-                "un_rate": un_count / total_count if total_count > 0 else 0,
+                "un_rate": un_count / generated_count if generated_count > 0 else 0,
                 "counts": {
                     "unique": unique_count,
                     "novel": novel_count,
                     "unique_and_novel": un_count,
+                    "generated_count": generated_count,
                     "total": total_count
                 },
                 "detailed_results": detailed_results,
@@ -998,7 +1002,7 @@ class OptimizedCrystalEvaluator:
                     "distribution_metrics": distribution_results.get(folder_name, {}),
                     "un_metrics": un_results.get(folder_name, {}),
                     "processing_info": {
-                        "total_cif_files": len(self.data_manager.get_folder_data(folder_name)),
+                        "total_cif_files": self.data_manager.generated_counts[folder_name],
                         "alignment": "flowmm_compatible",
                         "modifications": ["flowmm_structure_construction", "flowmm_validity_check", "1000_sampling", "single_element_filtering"]
                     }
@@ -1074,6 +1078,7 @@ class OptimizedCrystalEvaluator:
                 "unique_rate": un.get("unique_rate", 0),
                 "novel_rate": un.get("novel_rate", 0),
                 "un_rate": un.get("un_rate", 0),
+                "generated_count": self.data_manager.generated_counts[folder_name],
                 "total_structures": validity.get("counts", {}).get("total", 0)
             }
             summary_data.append(row)
